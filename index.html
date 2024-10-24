@@ -8,6 +8,9 @@
   <!-- css start -->
   <link rel="stylesheet" href="./style.css">
   <!-- css end -->
+  <!-- Swiper css CDN start -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper css CDN end -->
 </head>
 
 <body>
@@ -59,12 +62,31 @@
             <a href="#"><img src="./img/logo.png" alt=""></a>
           </div>
           <div class="header-search-bar">
-            <div class="header-search-input">
-              <input type="text" placeholder="Search your parts">
-            </div>
-            <div class="header-categories">
-              <img src="./img/icon/three-line-icon.png" alt="">
-              <p>Categories</p>
+            <div class="search-bar">
+              <div class="header-search-input">
+                <input class="search-field" type="search" placeholder="Search your parts">
+              </div>
+              <div class="header-categories">
+                <img src="./img/icon/three-line-icon.png" alt="">
+                <div class="select-categories">
+                  <select>
+                    <option value="">All Categories</option>
+                    <option value="Air Filters">Air Filters</option>
+                    <option value="Auto Parts">Auto Parts</option>
+                    <option value="Car Care">Car Care</option>
+                    <option value="Clearance">Clearance</option>
+                    <option value="Tire Chains">Tire Chains</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit">
+                <svg fill="#ffffff" width="52" height="52" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64">
+                  <path
+                    d="M62.1,57L44.6,42.8c3.2-4.2,5-9.3,5-14.7c0-6.5-2.5-12.5-7.1-17.1v0c-9.4-9.4-24.7-9.4-34.2,0C3.8,15.5,1.3,21.6,1.3,28c0,6.5,2.5,12.5,7.1,17.1c4.7,4.7,10.9,7.1,17.1,7.1c6.1,0,12.1-2.3,16.8-6.8l17.7,14.3c0.3,0.3,0.7,0.4,1.1,0.4c0.5,0,1-0.2,1.4-0.6C63,58.7,62.9,57.6,62.1,57z M10.8,42.7C6.9,38.8,4.8,33.6,4.8,28s2.1-10.7,6.1-14.6c4-4,9.3-6,14.6-6c5.3,0,10.6,2,14.6,6c3.9,3.9,6.1,9.1,6.1,14.6S43.9,38.8,40,42.7C32,50.7,18.9,50.7,10.8,42.7z">
+                  </path>
+                </svg>
+              </button>
             </div>
           </div>
           <div class="menu-items">
@@ -91,6 +113,210 @@
     </div>
   </section>
   <!-- header menu end -->
+
+  <!-- hero section start -->
+  <section class="hero-section">
+    <div class="hero-section-row">
+      <div class="container">
+        <div class="hero-section-container">
+          <div class="hero-section-top">
+            <div class="hero-section-top-content">
+              <div class="hero-top-content-left">
+                <div class="hero-online">
+                  <p>#1 Online Marketplace</p>
+                </div>
+                <div class="hero-heading">
+                  <h1>Over 800,000 Auto Parts Areavailable Waiting for You</h1>
+                </div>
+                <div class="hero-description">
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever</p>
+                </div>
+              </div>
+              <div class="hero-top-content-right">
+                <div class="hero-shop-now">
+                  <a href="#">Shop Now</a>
+                </div>
+                <div class="hero-view-details">
+                  <a href="#">View Details <svg width="25" height="10" viewBox="0 0 25 10" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24.8748 4.45668L20.5686 0.150525C20.414 -0.0301009 20.1421 -0.0511571 19.9615 0.103565C19.7809 0.258249 19.7598 0.530095 19.9145 0.710721C19.929 0.727559 19.9447 0.743286 19.9615 0.757681L23.5313 4.33179L0.430601 4.33179C0.192801 4.33179 3.95552e-07 4.52459 4.16345e-07 4.76243C4.37137e-07 5.00026 0.192801 5.19303 0.430602 5.19303L23.5313 5.19303L19.9615 8.76281C19.7809 8.91749 19.7598 9.18934 19.9145 9.36996C20.0693 9.55059 20.3411 9.57164 20.5217 9.41692C20.5385 9.40249 20.5543 9.3868 20.5687 9.36996L24.8748 5.0638C25.0417 4.89591 25.0417 4.62465 24.8748 4.45668Z"
+                        fill="black" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="hero-section-bottom">
+            <div class="swiper hero-sliders">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="hero-single-item">
+                    <div class="hero-banner-content">
+                      <h3>Big Season Sale of the Year</h3>
+                      <h1>35% OFF</h1>
+                      <p>Sport Gas Shock Absorers</p>
+                    </div>
+                    <div class="hero-banner-image">
+                      <img src="./img/banner/banner-img-01.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero-single-item">
+                    <div class="hero-banner-content">
+                      <h3>Big Season Sale of the Year</h3>
+                      <h1>35% OFF</h1>
+                      <p>Sport Gas Shock Absorers</p>
+                    </div>
+                    <div class="hero-banner-image">
+                      <img src="./img/banner/banner-img-01.png" alt="">
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="hero-single-item">
+                    <div class="hero-banner-content">
+                      <h3>Big Season Sale of the Year</h3>
+                      <h1>35% OFF</h1>
+                      <p>Sport Gas Shock Absorers</p>
+                    </div>
+                    <div class="hero-banner-image">
+                      <img src="./img/banner/banner-img-01.png" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero section end -->
+
+
+  <!-- Category section start -->
+
+  <section class="Category-section">
+    <div class="category-section-row">
+      <div class="container">
+        <div class="section-title">
+          <h4>Explore by Category</h4>
+          <p><a href="#">All Categories <svg width="7" height="12" viewBox="0 0 7 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.02985 11.2432L0.183105 10.3964L4.54962 6.02991L0.183105 1.66339L1.02985 0.816646L6.24311 6.02991L1.02985 11.2432Z"
+                  fill="#17212E" />
+              </svg></a></p>
+        </div>
+        <div class="swiper category-items">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="category-item cat-01">
+                <div class="category-item-image">
+                  <img src="./img/Category/Category-01.png" alt="">
+                </div>
+                <div class="category-item-content">
+                  <div class="item-title">
+                    <h4>Tire Rim</h4>
+                    <p>6 products</p>
+                  </div>
+                  <div class="item-number">
+                    <p>01</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="category-item cat-02">
+                <div class="category-item-image">
+                  <img src="./img/Category/Category-02.png" alt="">
+                </div>
+                <div class="category-item-content">
+                  <div class="item-title">
+                    <h4>Brakes System</h4>
+                    <p>9 products</p>
+                  </div>
+                  <div class="item-number">
+                    <p>02</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="category-item cat-03">
+                <div class="category-item-image">
+                  <img src="./img/Category/Category-03.png" alt="">
+                </div>
+                <div class="category-item-content">
+                  <div class="item-title">
+                    <h4>Engine Oil Filters</h4>
+                    <p>21 products</p>
+                  </div>
+                  <div class="item-number">
+                    <p>03</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="category-item cat-04">
+                <div class="category-item-image">
+                  <img src="./img/Category/Category-04.png" alt="">
+                </div>
+                <div class="category-item-content">
+                  <div class="item-title">
+                    <h4>Suspens Systems</h4>
+                    <p>23 products</p>
+                  </div>
+                  <div class="item-number">
+                    <p>04</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <div class="swiper-slide">
+              <div class="category-item cat-02">
+                <div class="category-item-image">
+                  <img src="./img/Category/Category-02.png" alt="">
+                </div>
+                <div class="category-item-content">
+                  <div class="item-title">
+                    <h4>Brakes System</h4>
+                    <p>9 products</p>
+                  </div>
+                  <div class="item-number">
+                    <p>02</p>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Category section end -->
+
+
+  <!-- Swiper js CDN start -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Swiper js CDN end -->
+
+  <script src="./custom.js"></script>
 </body>
 
 </html>
