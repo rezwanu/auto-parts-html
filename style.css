@@ -482,8 +482,9 @@ span.brator50 {
 }
 
 .category-item-image {
-  padding-left: 140px;
+  /* padding-left: 140px; */
   padding-bottom: 55px;
+  text-align: right;
 }
 
 .category-item-content {
@@ -519,4 +520,238 @@ span.brator50 {
   justify-content: space-between;
 }
 
+.category-item-image img {
+  max-height: 317px;
+}
+
 /* category section end */
+
+/* best selling section css start */
+
+.best-selling-section {
+  padding: 110px 0;
+}
+
+.best-section-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.best-title-section {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.best-title-section h4 {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 700;
+  font-family: "Rubik";
+}
+
+.best-title-section p a {
+  text-decoration: none;
+  color: #000;
+}
+
+.best-title-section p a svg {
+  margin-left: 10px;
+}
+
+.best-tab-section ul {
+  display: flex;
+  gap: 30px;
+}
+
+.best-tab-section ul li {
+  list-style: none;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 15px;
+  font-weight: 700;
+}
+
+li.tab-active {
+  color: red;
+}
+
+.single-product-items {
+  display: flex;
+  gap: 30px;
+  padding-top: 40px;
+  padding-bottom: 78px;
+}
+
+.product-item {
+  border: 1px solid red;
+  border-radius: 10px;
+  padding: 40px;
+  position: relative;
+}
+
+.product-item-content {
+  text-align: center;
+  width: 100%;
+}
+
+.product-item-content .product-brand {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #9ea4ab;
+  padding-bottom: 10px;
+}
+
+.product-item-content h3 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  max-width: 250px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.product-item-content .product-description {
+  background-color: #d3d3d3a2;
+  max-width: 280px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 11px 19px;
+  color: #878a8ca3;
+}
+
+.product-price-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.product-price-box .product-price {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: red;
+}
+
+.product-price-box .product-old-price {
+  font-size: 15px;
+  line-height: 16px;
+  color: #9ea4ab;
+  text-decoration: line-through;
+}
+
+.product-stock p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #099268;
+}
+
+.product-vat {
+  padding-bottom: 10px;
+}
+
+.product-stock {
+  padding-bottom: 10px;
+}
+
+.product-stock p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #099268;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.progress-bar {
+  width: 250px;
+  height: 8px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.progress-bar {
+  background: linear-gradient(80deg, #f73312 0%, #e5d647 35%, #28ca99 100%);
+}
+
+.progress-bar .incomplete {
+  position: absolute;
+  background-color: #e9ecef !important;
+  right: 0;
+  height: 8px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.product-stock-progress-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.product-quantity {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #9ea4ab;
+}
+
+.product-quantity p {
+  font-size: 12px;
+  font-family: "Rubik";
+}
+
+.product-quantity p span {
+  color: #000;
+  font-weight: 700;
+}
+
+.product-badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+.product-new {
+  background-color: #262626;
+  padding: 3px 10px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.product-off {
+  background-color: #f73312;
+  padding: 3px 10px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.product-sold {
+  background-color: #7faf2b;
+  padding: 3px 10px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.product-Stock {
+  background-color: #000000;
+  padding: 3px 10px;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.hotspots-section {
+  display: flex;
+}
+
+/* best selling section css end */
