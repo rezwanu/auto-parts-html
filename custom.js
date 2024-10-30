@@ -8,6 +8,10 @@ var swiper = new Swiper(".hero-sliders", {
   //   autoplay: {
   //     delay: 3000,
   //   },
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
 });
 
 // for category slider
