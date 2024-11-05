@@ -366,6 +366,7 @@ span.brator50 {
   justify-content: space-evenly;
   align-items: center;
   padding: 44px 0;
+  border-radius: 10px;
 }
 
 .hero-banner-content {
@@ -680,6 +681,7 @@ span.brator50 {
 
   .Category-section .section-title {
     gap: unset;
+    justify-content: space-between;
   }
 }
 
@@ -2021,6 +2023,18 @@ section.blog-section {
   transition: all 0.5s ease-in;
 }
 
+.newslatter-subscrib-form p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-top: 10px;
+}
+
+.newslatter-subscrib-form .newslatter-terms {
+  color: #ef233c;
+  text-decoration: underline;
+}
+
 @media (max-width: 991px) {
   .newslatter-row {
     flex-direction: column;
@@ -2033,3 +2047,232 @@ section.blog-section {
 }
 
 /* newsletter section css end */
+
+/* footer section css start */
+
+.auto-parts-footer-section {
+  padding-top: 110px;
+  background-color: #212529;
+  color: #fff;
+}
+
+.auto-parts-footer-top {
+  border-bottom: 1px solid #d7dadf;
+  padding-bottom: 110px;
+}
+
+.auto-parts-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.auto-parts-catalog h3 {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+
+.auto-parts-catalog ul li,
+.auto-parts-information ul li,
+.auto-parts-customer ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.auto-parts-catalog ul li a,
+.auto-parts-information ul li a,
+.auto-parts-customer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.auto-parts-catalog h3,
+.auto-parts-information h3,
+.auto-parts-customer h3 {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+  padding-bottom: 25px;
+}
+
+.auto-parts-catalog ul li a,
+.auto-parts-information ul li a,
+.auto-parts-customer ul li a {
+  text-decoration: none;
+  color: #fff;
+  position: relative;
+}
+
+.auto-parts-customer ul li a:hover,
+.auto-parts-catalog ul li a:hover,
+.auto-parts-information ul li a:hover {
+  color: #ef233c;
+  transition: all 0.5s ease-in;
+}
+
+.auto-parts-customer ul li a::after,
+.auto-parts-catalog ul li a::after,
+.auto-parts-information ul li a::after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #ef233c;
+  transition: all 0.5s ease;
+}
+
+.auto-parts-customer ul li a:hover::after,
+.auto-parts-catalog ul li a:hover::after,
+.auto-parts-information ul li a:hover::after {
+  width: 100%;
+}
+
+.auto-parts-footer-logo {
+  padding-bottom: 25px;
+}
+
+.auto-parts-footer-tagline p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  max-width: 310px;
+  padding-bottom: 20px;
+}
+
+.auto-parts-footer-day-time {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #ffffffa6;
+  padding-bottom: 17px;
+}
+
+.auto-parts-footer-contact a {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  color: #ef233c;
+  text-decoration: none;
+}
+
+.auto-parts-footer-contact a:hover {
+  color: #fff;
+  transition: all 0.5s ease-in;
+}
+
+.auto-parts-footer-bottom {
+  padding: 30px 0;
+}
+
+.footer-bottom-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-bottom-app {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.apps-logo {
+  display: flex;
+  gap: 25px;
+}
+
+.apps-logo img {
+  display: block;
+}
+
+.footer-bottom-menu ul {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-bottom-menu ul li {
+  list-style: none;
+}
+
+.footer-bottom-menu ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.footer-bottom-menu ul li a:hover {
+  color: #ef233c;
+  transition: all 0.5s ease-in;
+}
+
+.footer-bottom-menu p {
+  font-size: 13px;
+  line-height: 15px;
+  font-weight: 400;
+  padding-top: 5px;
+  color: #ffffff60;
+}
+
+@media (max-width: 1650px) {
+  .footer-bottom-row {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 991px) {
+  .footer-bottom-row {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .footer-bottom-app {
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .auto-parts-footer-section {
+    padding: 70px 0;
+  }
+
+  .auto-parts-content {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .auto-parts-catalog,
+  .auto-parts-information,
+  .auto-parts-customer,
+  .auto-parts-footer-about {
+    width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 575px) {
+  .auto-parts-catalog,
+  .auto-parts-information,
+  .auto-parts-customer,
+  .auto-parts-footer-about {
+    width: 100%;
+  }
+
+  .apps-logo {
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+  }
+}
+
+/* footer section css end */
