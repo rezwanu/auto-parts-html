@@ -1,3 +1,16 @@
+// for mobile menubar
+
+function openSideMenu() {
+  const sideMenu = document.querySelector(".side-menu");
+
+  sideMenu.style.display = "flex";
+}
+
+function closeSideMenu() {
+  const sideMenu = document.querySelector(".side-menu");
+  sideMenu.style.display = "none";
+}
+
 // for hero slider
 
 var swiper = new Swiper(".hero-sliders", {
