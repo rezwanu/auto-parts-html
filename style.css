@@ -281,6 +281,7 @@ span.brator50 {
   border: none;
   border-radius: 0 5px 5px 0;
   margin-left: 32px;
+  cursor: pointer;
 }
 
 .search-bar svg {
@@ -317,6 +318,10 @@ span.brator50 {
   padding: 10px 20px;
 }
 
+.hideOnDesktop {
+  display: none;
+}
+
 @media (max-width: 1490px) {
   .header-logo {
     padding-right: 50px;
@@ -339,7 +344,7 @@ span.brator50 {
   }
 }
 
-@media (max-width: 1300px) {
+@media (max-width: 1326px) {
   .header-categories {
     display: none;
   }
@@ -349,9 +354,15 @@ span.brator50 {
   }
 }
 
+@media (max-width: 1115px) {
+  .header-search-bar {
+    display: none;
+  }
+}
+
 @media (max-width: 1100px) {
-  .menu-items {
-    padding-left: 15px;
+  .header-search-bar {
+    display: none;
   }
 }
 
@@ -1688,6 +1699,35 @@ span.brator50 {
   .deals-product-quantity {
     justify-content: space-between;
   }
+
+  .deals-product-banner-content h3 {
+    padding-left: 20px;
+    max-width: 335px;
+  }
+
+  .deals-product-banner-content p {
+    padding-left: 20px;
+  }
+
+  .deals-product-btn {
+    padding-left: 20px;
+  }
+
+  .deals-product-banner-content p {
+    padding-left: 20px;
+  }
+
+  .offer-timer {
+    padding-left: 20px;
+  }
+
+  .timer-item-seperator {
+    right: -18px;
+  }
+
+  .offer-timer {
+    gap: 28px;
+  }
 }
 
 /* best Deals section css end */
@@ -1809,6 +1849,11 @@ section.blog-section {
   font-size: 50px;
   line-height: 55px;
   font-weight: 700;
+}
+
+.blog-heading-section a {
+  text-decoration: none;
+  color: #000;
 }
 
 .blog-heading-section p {
@@ -2019,8 +2064,12 @@ section.blog-section {
   }
 
   .blog-heading-section h3 {
-    font-size: 30px;
+    font-size: 23px;
     line-height: 40px;
+  }
+
+  .blog-heading-section p {
+    display: block;
   }
 
   .blog-items {
@@ -2134,8 +2183,8 @@ section.blog-section {
 
 @media (max-width: 767px) {
   .featured-makes-heading h3 {
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 22px;
+    line-height: 32px;
   }
 
   .featured-makes-item-single {
@@ -2254,6 +2303,11 @@ section.blog-section {
   text-decoration: underline;
 }
 
+.newslatter-subscrib-form .newslatter-terms a {
+  text-decoration: none;
+  color: #ef233c;
+}
+
 @media (max-width: 991px) {
   .newslatter-row {
     flex-direction: column;
@@ -2262,6 +2316,32 @@ section.blog-section {
 
   .newslatter-subscrib-form {
     width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .newslatter-subscrib-form {
+    width: 100%;
+  }
+
+  .newslatter-subscrib-content h3 {
+    font-size: 25px;
+  }
+
+  .newslatter-icon {
+    display: none;
+  }
+
+  .newslatter-subscrib-form {
+    padding: 0;
+  }
+
+  .newslatter-row {
+    text-align: center;
+  }
+
+  .newslatter-subscrib-content p {
+    max-width: unset;
   }
 }
 
@@ -2439,6 +2519,16 @@ section.blog-section {
   color: #ffffff60;
 }
 
+.footer-bottom-menu p a {
+  text-decoration: none;
+  color: #ffffff60;
+}
+
+.footer-bottom-menu p a:hover {
+  color: #ef233c;
+  transition: all 0.5s ease-in;
+}
+
 @media (max-width: 1650px) {
   .footer-bottom-row {
     justify-content: center;
@@ -2491,6 +2581,16 @@ section.blog-section {
     display: flex;
     gap: 25px;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 575px) {
+  .auto-parts-content {
+    text-align: center;
+  }
+
+  .auto-parts-footer-tagline p {
+    max-width: 100%;
   }
 }
 
@@ -2681,10 +2781,15 @@ section.blog-section {
 
 /**************************** Blog Details Page ************************/
 
+.blog-details-section {
+  padding-bottom: 110px;
+}
+
 .blog-details-row {
   max-width: 1200px;
   margin: 0 auto;
 }
+
 .blog-details-content {
   padding: 70px 0;
 }
@@ -2788,6 +2893,11 @@ section.blog-section {
   color: #000;
 }
 
+.blog-details-socials {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
 .blog-details-socials ul {
   display: flex;
   gap: 35px;
@@ -2803,8 +2913,8 @@ section.blog-section {
   text-decoration: none;
   color: #000;
   align-items: center;
-  padding-top: 25px;
-  padding-bottom: 45px;
+  /* padding-top: 25px; */
+  /* padding-bottom: 45px; */
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
@@ -2831,12 +2941,123 @@ section.blog-section {
   color: #ff0000;
 }
 
+.blog-details-hr {
+  height: 1px;
+  background-color: #d7dadf;
+  margin-bottom: 42px;
+}
+
+.blog-details-comment h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.blog-details-comment p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 10px;
+  padding-bottom: 40px;
+  color: #494949;
+}
+
+.blog-details-comment textarea,
+.blog-details-comment input[type="text"],
+.blog-details-comment input[type="email"] {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.blog-details-comment input[type="text"],
+.blog-details-comment input[type="email"] {
+  width: 33%;
+  /*   margin-right: calc(33% - 25px); */
+  box-sizing: border-box;
+}
+
+.blog-details-comment button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #212121;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.blog-details-comment button[type="submit"]:hover {
+  background-color: #333;
+}
+
+@media (max-width: 991px) {
+  .blog-details-comment input[type="text"],
+  .blog-details-comment input[type="email"] {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 767px) {
   .blog-details-socials ul {
-    gap: 25px;
+    gap: 20px;
+    flex-wrap: wrap;
   }
 
   .blog-details-socials ul li a {
     gap: 10px;
+  }
+
+  .blog-details-comment input[type="text"],
+  .blog-details-comment input[type="email"] {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .blog-details-qoute h2 {
+    display: flex;
+  }
+}
+
+@media (max-width: 600px) {
+  .blog-details-qoute h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-details-comment textarea,
+  .blog-details-comment input[type="text"],
+  .blog-details-comment input[type="email"] {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .blog-details-comment button[type="submit"] {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .blog-details-content-title h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .blog-details-description h4 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .our-service-items {
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 }
