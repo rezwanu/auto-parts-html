@@ -3061,3 +3061,264 @@ section.blog-section {
     padding-bottom: 25px;
   }
 }
+
+/*************************** Shop Page ***********************/
+
+.shop-page-breadcrumb ul {
+  display: flex;
+  gap: 10px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.shop-page-breadcrumb ul li {
+  list-style: none;
+}
+
+.shop-page-breadcrumb ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.breadcrumb-img {
+  position: relative;
+}
+
+.breadcrumb-img img {
+  display: block;
+}
+
+.breadcrumb-content {
+  position: absolute;
+  color: #fff;
+  top: 85px;
+  left: 85px;
+}
+
+.breadcrumb-content h2 {
+  font-size: 60px;
+  line-height: 64px;
+  padding-bottom: 17px;
+}
+
+.breadcrumb-content p {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  max-width: 420px;
+}
+
+.shop-page-product-grid {
+  display: flex;
+  /* gap: 42px; */
+}
+
+/* shop page sidebar css start */
+
+.shop-page-product-grid-sidebar h4 {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 700;
+  padding-top: 44px;
+}
+
+.shop-page-product-grid-sidebar p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  max-width: 350px;
+  padding-top: 12px;
+  padding-bottom: 30px;
+}
+
+form {
+  max-width: 420px;
+}
+
+form select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 16px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  color: #333;
+}
+
+form select:focus {
+  border-color: #d1d5db;
+  outline: none;
+}
+
+form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 16px;
+  font-size: 16px;
+  background-color: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #c0392b;
+}
+
+.sidebar-divider {
+  max-width: 420px;
+  height: 1px;
+  background-color: #e5e7eb;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+.shop-page-product-grid-sidebar ul {
+  list-style-type: none;
+  max-width: 420px;
+  padding-top: 20px;
+}
+
+.shop-page-product-grid-sidebar li {
+  margin-bottom: 10px;
+}
+
+.shop-page-product-grid-sidebar input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.shop-page-product-grid-sidebar label {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.shop-page-product-grid-sidebar span {
+  float: right;
+  color: gray;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.color-options {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.color-options label {
+  display: flex;
+  /* align-items: center; */
+  margin-bottom: 10px;
+}
+
+.color-options input[type="radio"] {
+  display: none;
+}
+
+.color-options .color-swatch {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+.color-options .color-swatch.yellow {
+  background-color: yellow;
+}
+
+.color-options .color-swatch.red {
+  background-color: red;
+}
+
+.color-options .color-swatch.black {
+  background-color: black;
+}
+
+.color-options .color-swatch.green {
+  background-color: #3d9c58;
+}
+
+.color-options .color-swatch.brown {
+  background-color: #9a5b20;
+}
+
+.color-options .color-label {
+  font-weight: 400;
+}
+
+.color-options label:hover .color-swatch {
+  opacity: 0.7;
+}
+
+.color-options input[type="radio"]:checked + .color-swatch {
+  border: 2px solid black;
+}
+
+/* blog pagination css start */
+
+.shop-page-pagination {
+  padding-bottom: 190px;
+}
+
+.shop-page-pagination ul {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.shop-page-pagination ul li {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s;
+  color: #bdbdbd;
+  border: #bdbdbd solid 1px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.shop-page-pagination ul li:hover {
+  background-color: #ff2424;
+  color: #fff;
+}
+
+.shop-page-pagination .left-arrow,
+.shop-page-pagination .right-arrow {
+  border: none;
+}
+
+.shop-page-pagination .left-arrow:hover,
+.shop-page-pagination .right-arrow:hover {
+  color: #fff;
+}
+
+.shop-page-pagination svg path {
+  fill: #ff2424;
+}
+
+.shop-page-pagination li:hover svg path {
+  fill: #ffffff;
+}
+
+/* blog pagination css end */
+
+.shop-page-product-grid-sidebar {
+  width: 25%;
+}
+
+.shop-page-product-grid-content {
+  width: 75%;
+}
+
+.shop-page-product-grid-content .product-item {
+  width: calc(33% - 17px);
+}
