@@ -1,8 +1,8 @@
-/* google fonts */
+/**************************** Google Fonts ****************************/
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-/* common css start */
+/**************************** Common CSS Start ****************************/
 * {
   margin: 0;
   padding: 0;
@@ -23,11 +23,12 @@ body {
   font-family: "Rubik", sans-serif;
 }
 
-/* common css end */
+/**************************** Common CSS End ****************************/
 
 /**************************** Home Page ************************/
 
-/* header top css start */
+/**************************** Header Top Start ****************************/
+/**************************** Header Top CSS Start ************************/
 
 .header-top {
   background-color: #040404;
@@ -98,7 +99,6 @@ span.brator50 {
   /* display: flex;
   align-items: center;
   gap: 10px; */
-
   border: none;
   background: #000;
   color: #fff;
@@ -149,6 +149,9 @@ span.brator50 {
   align-items: center;
 }
 
+/**************************** Header Top CSS End           ****************************/
+/**************************** Header Top Media Query Start ****************************/
+
 @media (max-width: 1200px) {
   .header-top-container {
     justify-content: center;
@@ -175,9 +178,25 @@ span.brator50 {
   }
 }
 
-/* header top css end */
+/**************************** Header Top Media Query End ****************************/
+/**************************** Heder Top End              ****************************/
 
 /* header menu css start */
+
+.header-menu-container {
+  position: relative;
+  z-index: 2;
+}
+
+.header-menu-row {
+  position: relative;
+}
+
+.bg-banner {
+  position: absolute;
+  right: 0px;
+  top: -20px;
+}
 
 .header-menu {
   padding: 20px 0;
@@ -274,6 +293,7 @@ span.brator50 {
   font-weight: 400;
   font-family: "Rubik";
   letter-spacing: 1px;
+  cursor: pointer;
 }
 
 .search-bar button {
@@ -401,6 +421,11 @@ span.brator50 {
   margin-bottom: 27px;
 }
 
+.hero-section-container {
+  position: relative;
+  z-index: 2;
+}
+
 .hero-section-top-content {
   display: flex;
   justify-content: space-between;
@@ -485,7 +510,7 @@ span.brator50 {
 }
 
 .hero-section-bottom {
-  margin-top: 58px;
+  margin-top: 45px;
 }
 
 .hero-single-item {
@@ -878,7 +903,7 @@ span.brator50 {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-bottom: 78px;
 }
 
@@ -1831,7 +1856,8 @@ span.brator50 {
 
 /* our service section css end */
 
-/* blog section css start */
+/**************************** Blog Section Start ****************************/
+/**************************** Blog Section CSS Start ****************************/
 
 section.blog-section {
   padding: 100px 0;
@@ -1988,6 +2014,9 @@ section.blog-section {
   left: 22px;
 }
 
+/**************************** Blog Section CSS End ****************************/
+/**************************** Blog Media Query Start ****************************/
+
 @media (max-width: 1400px) {
   .blog-content {
     bottom: 30px;
@@ -2091,9 +2120,11 @@ section.blog-section {
   }
 }
 
-/* blog section css end */
+/**************************** Blog Media Query End ****************************/
+/**************************** Blog Section CSS End ****************************/
 
-/* featured makes section css start */
+/**************************** Featured Makes Start ****************************/
+/**************************** Featured makes section css start ****************************/
 
 .featured-makes-section {
   padding: 100px 0;
@@ -2156,6 +2187,9 @@ section.blog-section {
   color: #000;
 }
 
+/**************************** Featured Makes Section CSS End ****************************/
+/**************************** Featured Makes Media Query Start ****************************/
+
 @media (max-width: 991px) {
   .featured-makes-item-single {
     width: calc(33% - 17px);
@@ -2199,9 +2233,12 @@ section.blog-section {
     padding: 70px 0;
   }
 }
-/* featured makes section css end */
 
-/* newsletter section css start */
+/**************************** Featured makes media query end ****************************/
+/**************************** Featured Makes End ****************************/
+
+/**************************** Newslatter start ****************************/
+/**************************** Newsletter section css start ****************************/
 
 .newslatter-section {
   background: #212529;
@@ -2273,7 +2310,6 @@ section.blog-section {
   background: #ef233c;
   border: 1px solid #ef233c;
   color: #fff;
-  border: none;
   outline: none;
   padding: 17px 24px;
   border-radius: 5px;
@@ -2307,6 +2343,15 @@ section.blog-section {
   text-decoration: none;
   color: #ef233c;
 }
+
+@media (max-width: 510px) {
+  .newslatter-subscrib-form .newslatter-terms {
+    display: block;
+  }
+}
+
+/**************************** Newslatter section css end ****************************/
+/**************************** Newslatter media query start ****************************/
 
 @media (max-width: 991px) {
   .newslatter-row {
@@ -2345,9 +2390,11 @@ section.blog-section {
   }
 }
 
-/* newsletter section css end */
+/**************************** Newslatter media query end ****************************/
+/**************************** Newsletter End ****************************/
 
-/* footer section css start */
+/**************************** Footer Start ****************************/
+/**************************** Footer Section CSS Start ****************************/
 
 .auto-parts-footer-section {
   padding-top: 110px;
@@ -2528,6 +2575,8 @@ section.blog-section {
   color: #ef233c;
   transition: all 0.5s ease-in;
 }
+/**************************** Footer section css end ****************************/
+/**************************** Footer media query start ****************************/
 
 @media (max-width: 1650px) {
   .footer-bottom-row {
@@ -2594,11 +2643,11 @@ section.blog-section {
   }
 }
 
-/* footer section css end */
+/**************************** Footer media query end ****************************/
+/**************************** Footer End ****************************/
 
-/**************************** Categories Page ************************/
-
-/* Shop by category css start */
+/**************************** Categories Page Start ************************/
+/**************************** Shop by category css start ****************************/
 
 .cat-page-category-items {
   display: flex;
@@ -2682,6 +2731,9 @@ section.blog-section {
   background-color: #f5faed;
 }
 
+/***************** Shop by category css end           **************/
+/***************** Shop By Category media query start *****************/
+
 @media (max-width: 991px) {
   .cat-page-category-item {
     width: calc(33% - 17px);
@@ -2699,25 +2751,28 @@ section.blog-section {
     width: 100%;
   }
 }
-/* Shop by category css end */
+/***************** Shop By Category media query end *****************/
+/***************** Shop By Category End             *****************/
 
-/* best-selling-section css start */
+/**************************** Best Selling Start ****************************/
+/**************************** Best Selling Section CSS Start ***********************/
 
 .cat-page-best-selling-section {
   padding: 50px 0;
 }
 
-/* best-selling-section css end */
+/**************************** best-selling-section css end ****************************/
 
-/* Our Business Partners css start */
+/**************************** Our Business Partners css start ****************************/
 
 .cat-page-our-brand-section {
   padding: 50px 0;
 }
 
-/* Our Business Partners css end */
+/**************************** Our Business Partners css end ****************************/
 
-/**************************** Blog Page ************************/
+/***************** Blog Page start     *****************/
+/***************** blog page css start *****************/
 
 .blog-page {
   padding-bottom: 100px;
@@ -2737,7 +2792,8 @@ section.blog-section {
   padding-bottom: 51px;
 }
 
-/* blog pagination css start */
+/***************** blog page css end         *****************/
+/***************** blog pagination css start *****************/
 
 .blog-pagination ul {
   display: flex;
@@ -2777,9 +2833,11 @@ section.blog-section {
   color: #fff;
 }
 
-/* blog pagination css end */
+/***************** blog pagination css end *****************/
+/***************** blog page End *****************/
 
-/**************************** Blog Details Page ************************/
+/**************************** Blog Details Page Start ************************/
+/***************** blog details page css start *****************/
 
 .blog-details-section {
   padding-bottom: 110px;
@@ -2997,6 +3055,9 @@ section.blog-section {
   background-color: #333;
 }
 
+/***************** blog details page css end *****************/
+/***************** blog details page media query start *****************/
+
 @media (max-width: 991px) {
   .blog-details-comment input[type="text"],
   .blog-details-comment input[type="email"] {
@@ -3061,8 +3122,11 @@ section.blog-section {
     padding-bottom: 25px;
   }
 }
+/***************** blog details page media query end *****************/
+/***************** Blog Details Page End *****************/
 
-/*************************** Shop Page ***********************/
+/***************** Shop Page Start *****************/
+/***************** Shop Page Breadcrumb CSS Start *****************/
 
 .shop-page-breadcrumb ul {
   display: flex;
@@ -3091,8 +3155,8 @@ section.blog-section {
 .breadcrumb-content {
   position: absolute;
   color: #fff;
-  top: 85px;
-  left: 85px;
+  top: 27%;
+  left: 5%;
 }
 
 .breadcrumb-content h2 {
@@ -3110,10 +3174,11 @@ section.blog-section {
 
 .shop-page-product-grid {
   display: flex;
-  /* gap: 42px; */
+  gap: 20px;
 }
 
-/* shop page sidebar css start */
+/***************** Shop Page Breadcrumb CSS End *****************/
+/***************** Shop Page Sidebar CSS Start *****************/
 
 .shop-page-product-grid-sidebar h4 {
   font-size: 24px;
@@ -3131,11 +3196,11 @@ section.blog-section {
   padding-bottom: 30px;
 }
 
-form {
+.shop-page-product-grid-sidebar form {
   max-width: 420px;
 }
 
-form select {
+.shop-page-product-grid-sidebar form select {
   width: 100%;
   padding: 12px;
   margin: 8px 0;
@@ -3146,12 +3211,12 @@ form select {
   color: #333;
 }
 
-form select:focus {
+.shop-page-product-grid-sidebar form select:focus {
   border-color: #d1d5db;
   outline: none;
 }
 
-form button {
+.shop-page-product-grid-sidebar form button {
   width: 100%;
   padding: 12px;
   margin-top: 16px;
@@ -3163,7 +3228,7 @@ form button {
   cursor: pointer;
 }
 
-form button:hover {
+.shop-page-product-grid-sidebar form button:hover {
   background-color: #c0392b;
 }
 
@@ -3211,7 +3276,6 @@ form button:hover {
 
 .color-options label {
   display: flex;
-  /* align-items: center; */
   margin-bottom: 10px;
 }
 
@@ -3257,10 +3321,11 @@ form button:hover {
   border: 2px solid black;
 }
 
-/* blog pagination css start */
+/***************** Shop Page Sidebar CSS End *****************/
+/***************** Shop Page Pagination CSS Start *****************/
 
 .shop-page-pagination {
-  padding-bottom: 190px;
+  padding-bottom: 80px;
 }
 
 .shop-page-pagination ul {
@@ -3309,7 +3374,230 @@ form button:hover {
   fill: #ffffff;
 }
 
-/* blog pagination css end */
+/***************** Shop Page Pagination CSS End *****************/
+
+.shop-page-divider {
+  height: 1px;
+  background-color: #e5e7eb;
+  margin-bottom: 96px;
+}
+
+/***************** Shop Page Best Deals Section CSS Start *****************/
+
+.shop-page-best-deals-section {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.shop-page-deals-section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shop-page-deals-title-section {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.shop-page-deals-title-section h4 {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 700;
+}
+
+.shop-page-deals-single-product-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding-top: 40px;
+  padding-bottom: 78px;
+}
+
+.shop-page-deals-product-item {
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  padding: 40px;
+  position: relative;
+  width: calc(25% - 23px);
+}
+
+.shop-page-deals-product-item-content {
+  text-align: center;
+  width: 100%;
+}
+
+.shop-page-deals-product-item-content a {
+  text-decoration: none;
+  color: #000;
+}
+
+.shop-page-deals-product-item-content a:hover {
+  color: #f73312;
+  transition: all 0.5s ease;
+}
+
+.shop-page-deals-product-item-content .shop-page-deals-product-brand {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #9ea4ab;
+  padding-bottom: 10px;
+}
+
+.shop-page-deals-product-item-content h3 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 500;
+  max-width: 250px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+.shop-page-deals-product-item-content .shop-page-deals-product-description {
+  background-color: #d3d3d3a2;
+  max-width: 280px;
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 11px 19px;
+  color: #878a8ca3;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.shop-page-deals-product-price-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.shop-page-deals-product-price-box .shop-page-deals-product-price {
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+  color: red;
+}
+
+.shop-page-deals-product-price-box .shop-page-deals-product-old-price {
+  font-size: 15px;
+  line-height: 16px;
+  color: #9ea4ab;
+  text-decoration: line-through;
+}
+
+.shop-page-deals-product-stock p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #099268;
+}
+
+.shop-page-deals-product-vat {
+  padding-bottom: 10px;
+}
+
+.shop-page-deals-product-stock {
+  padding-bottom: 10px;
+}
+
+.shop-page-deals-product-stock p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #099268;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.shop-page-deals-progress-bar {
+  width: 100%;
+  height: 8px;
+  position: relative;
+  border-radius: 8px;
+}
+
+.shop-page-deals-progress-bar {
+  background: linear-gradient(80deg, #f73312 0%, #e5d647 35%, #28ca99 100%);
+}
+
+.shop-page-deals-progress-bar .shop-page-deals-incomplete {
+  position: absolute;
+  background-color: #e9ecef !important;
+  right: 0;
+  height: 8px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+.shop-page-deals-product-stock-progress-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.shop-page-deals-product-quantity {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: #9ea4ab;
+}
+
+.shop-page-deals-product-quantity p {
+  font-size: 12px;
+  font-family: "Rubik";
+}
+
+.shop-page-deals-product-quantity p span {
+  color: #000;
+  font-weight: 700;
+}
+
+.shop-page-deals-product-badge {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+.shop-page-deals-product-new {
+  background-color: #262626;
+  padding: 3px 10px;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.shop-page-deals-product-off {
+  background-color: #f73312;
+  padding: 3px 10px;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.shop-page-deals-product-sold {
+  background-color: #7faf2b;
+  padding: 3px 10px;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.shop-page-deals-product-Stock {
+  background-color: #000000;
+  padding: 3px 10px;
+  color: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+}
 
 .shop-page-product-grid-sidebar {
   width: 25%;
@@ -3322,3 +3610,285 @@ form button:hover {
 .shop-page-product-grid-content .product-item {
   width: calc(33% - 17px);
 }
+
+.shop-page-product-grid-top-bar {
+  padding-top: 40px;
+}
+
+.results-toolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  padding: 18px 19px;
+  border-radius: 8px;
+  font-family: Arial, sans-serif;
+}
+
+.view-options {
+  display: flex;
+  gap: 8px;
+  margin-right: 16px;
+}
+
+.view-option {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: #ffffff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.view-option.active {
+  background-color: #f0f0f0;
+}
+
+.grid-icon,
+.list-icon {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* .grid-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><rect width="8" height="8" x="0" y="0" fill="black"/><rect width="8" height="8" x="12" y="0" fill="black"/><rect width="8" height="8" x="0" y="12" fill="black"/><rect width="8" height="8" x="12" y="12" fill="black"/></svg>');
+} */
+
+.list-icon {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"><rect width="16" height="4" x="0" y="2" fill="black"/><rect width="16" height="4" x="0" y="10" fill="black"/><rect width="16" height="4" x="0" y="18" fill="black"/></svg>');
+}
+
+.pause-button {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #333;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.results-info {
+  font-size: 14px;
+  color: #333;
+  margin-right: auto;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.controls .sort,
+.controls .show {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+.controls select {
+  background-color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+}
+
+.controls select:focus-visible {
+  outline: none;
+}
+/**************************** Shop Page Best Seller CSS End **************************/
+/**************************** Shop Page Media Query Start ****************************/
+
+@media (max-width: 1400px) {
+  .breadcrumb-content {
+    top: 22%;
+  }
+
+  .breadcrumb-content h2 {
+    font-size: 50px;
+    line-height: 55px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .breadcrumb-content {
+    top: 17%;
+  }
+
+  .breadcrumb-content h2 {
+    font-size: 50px;
+    line-height: 55px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 1243px) {
+  .shop-page-product-grid-content .product-item {
+    width: calc(50% - 17px);
+  }
+
+  .product-item {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .shop-page-deals-product-item {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .breadcrumb-content {
+    top: 13%;
+  }
+
+  .breadcrumb-content h2 {
+    font-size: 35px;
+    line-height: 45px;
+    padding-bottom: 5px;
+  }
+
+  .breadcrumb-content p {
+    font-size: 15px;
+    line-height: 22px;
+    max-width: 390px;
+  }
+
+  .results-info {
+    display: none;
+  }
+
+  .product-item {
+    padding: 30px;
+  }
+
+  .product-item-content h3 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .shop-page-deals-product-item {
+    width: calc(33% - 18px);
+  }
+}
+
+@media (max-width: 767px) {
+  .breadcrumb-content {
+    top: 13%;
+  }
+
+  .breadcrumb-content h2 {
+    font-size: 35px;
+    line-height: 40px;
+    padding-bottom: 5px;
+  }
+
+  .breadcrumb-content p {
+    font-size: 15px;
+    line-height: 22px;
+    max-width: 390px;
+  }
+
+  .shop-page-product-grid-sidebar span {
+    display: none;
+  }
+
+  .shop-page-product-grid-sidebar label {
+    font-size: 13px;
+    line-height: 23px;
+  }
+
+  .shop-page-deals-product-item {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 675px) {
+  .breadcrumb-content {
+    top: 17%;
+  }
+
+  .breadcrumb-content h2 {
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 0px;
+  }
+
+  .breadcrumb-content p {
+    display: none;
+  }
+
+  .shop-page-product-grid-sidebar {
+    display: none;
+  }
+
+  .shop-page-product-grid-content {
+    width: 100%;
+  }
+
+  .shop-page-pagination ul {
+    justify-content: center;
+  }
+
+  .shop-page-pagination ul li {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 575px) {
+  .breadcrumb-content {
+    top: 17%;
+  }
+
+  .breadcrumb-content h2 {
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 0px;
+  }
+
+  .breadcrumb-content p {
+    display: none;
+  }
+
+  .shop-page-product-grid-sidebar {
+    display: none;
+  }
+
+  .shop-page-product-grid-content {
+    width: 100%;
+  }
+
+  .shop-page-product-grid-content .product-item {
+    width: 100%;
+  }
+
+  .shop-page-deals-product-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .view-options {
+    display: none;
+  }
+
+  .controls {
+  }
+}
+
+/**************************** Shop Page CSS End ****************************/
