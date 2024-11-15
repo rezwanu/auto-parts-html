@@ -1,8 +1,8 @@
 // for mobile menubar
+// ========================== For Mobile Menubar ============================
 
 function openSideMenu() {
   const sideMenu = document.querySelector(".side-menu");
-
   sideMenu.style.display = "flex";
 }
 
@@ -11,7 +11,7 @@ function closeSideMenu() {
   sideMenu.style.display = "none";
 }
 
-// for hero slider
+// ========================== For Hero Slider ============================
 
 var swiper = new Swiper(".hero-sliders", {
   slidesPerView: 1,
@@ -27,7 +27,7 @@ var swiper = new Swiper(".hero-sliders", {
   },
 });
 
-// for category slider
+// ========================== For Category Slider ============================
 
 var swiper = new Swiper(".category-items", {
   slidesPerView: 1,
@@ -50,11 +50,35 @@ var swiper = new Swiper(".category-items", {
   },
 });
 
-// for isotop
+// ========================== For Countdown ============================
 
-// var elem = document.querySelector(".grid");
-// var iso = new Isotope(elem, {
-//   // options
-//   itemSelector: ".grid-item",
-//   layoutMode: "fitRows",
-// });
+// Set the end date and time for the countdown
+const endDate = new Date("2025-12-31T23:59:59").getTime();
+
+// Update the countdown every second
+const countdownInterval = setInterval(function () {
+  const now = new Date().getTime();
+  const distance = endDate - now;
+
+  // Calculate days, hours, minutes, and seconds
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor(
+    (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result
+  document.querySelector(".day").innerText = days;
+  document.querySelector(".hour").innerText = hours;
+  document.querySelector(".minute").innerText = minutes;
+  document.querySelector(".second").innerText = seconds;
+
+  // If countdown is over, display "00" in all elements and clear the interval
+  if (distance < 0) {
+    clearInterval(countdownInterval);
+    document.querySelectorAll(".timer-item-count").forEach((element) => {
+      element.innerText = "00";
+    });
+  }
+}, 1000);

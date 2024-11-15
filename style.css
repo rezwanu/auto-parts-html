@@ -114,7 +114,6 @@ span.brator50 {
   /* display: flex;
   align-items: center;
   gap: 10px; */
-
   border: none;
   background: #000;
   color: #fff;
@@ -149,6 +148,239 @@ span.brator50 {
   align-items: center;
 }
 
+/**************************** Cart Pop Up CSS Start *******************/
+
+.cart-pop-up {
+  width: 600px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.cart-pop-up-container {
+  max-width: 555px;
+  padding: 20px;
+}
+
+.cart-pop-up-top-divider {
+  width: 100%;
+  height: 3px;
+  background: #000;
+}
+
+.cart-pop-up-top-left-head {
+  display: flex;
+  gap: 20px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.cart-pop-up-top-left p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.cart-pop-up-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 35px;
+}
+
+.cart-pop-up-top .cart-pop-up-top-right {
+  cursor: pointer;
+}
+
+.cart-pop-up-bottom-single-product {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+}
+
+.cart-pop-up-bottom-single-product:last-child {
+  /* border-bottom: none; */
+}
+
+.cart-pop-up-bottom-product-left {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.cart-pop-up-bottom-prduct-left-img {
+  border-radius: 10px;
+  border: 1px solid #d3d3d3;
+  margin-right: 15px;
+}
+
+.cart-pop-up-bottom-prduct-left-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-pop-up-bottom-prduct-left-content h4 {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  color: #17212e;
+  max-width: 190px;
+  padding-bottom: 15px;
+}
+
+.cart-pop-up-bottom-product-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.product-price h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e82a3a;
+}
+
+.product-price span {
+  color: #0d1c1c;
+}
+
+.product-remove p {
+  font-size: 14px;
+  color: #0d1c1c;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.product-remove p:hover {
+  text-decoration: underline;
+  color: #e60000;
+}
+
+.cart-pop-up-bottom-prduct-left-quantity {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  height: 36px;
+}
+
+.cart-pop-up-bottom-prduct-left-quantity button {
+  background-color: #fff;
+  border: none;
+  padding: 0;
+  width: 36px;
+  height: 100%;
+  font-size: 18px;
+  cursor: pointer;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-pop-up-bottom-prduct-left-quantity input {
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  font-size: 16px;
+  border: none;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  outline: none;
+}
+
+.cart-pop-up-bottom-prduct-left-quantity button:hover {
+  background-color: #f1f1f1;
+}
+
+.frequently-bought-product-left {
+  display: flex;
+  align-items: center;
+  padding-top: 45px;
+}
+
+.frequently-bought-prduct-left-img {
+  border: 1px solid #d3d3d3;
+  border-radius: 10px;
+  margin-right: 15px;
+}
+
+.frequently-bought-prduct-left-img img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.frequently-bought-prduct-title h4 {
+  max-width: 190px;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+.frequently-bought-product-price h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+
+.frequently-bought-product-addToCart p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.frequently-bought-product-addToCart p:hover {
+  text-decoration: underline;
+  color: #e82a3a;
+}
+
+.frequently-bought-title {
+  padding: 45px 0;
+}
+
+.frequently-bought-products {
+  display: flex;
+  gap: 20px;
+}
+
+.cart-pop-up-Continue-shopping {
+  display: inline-block;
+}
+
+.cart-pop-up-Continue-shopping p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 50px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.cart-pop-up-Continue-shopping p:hover {
+  color: #e82a3a;
+}
+
+/**************************** Cart Pop Up CSS End          ****************************/
 /**************************** Header Top CSS End           ****************************/
 /**************************** Header Top Media Query Start ****************************/
 
