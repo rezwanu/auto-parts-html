@@ -155,6 +155,9 @@ span.brator50 {
   background-color: #fff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
+  position: absolute;
+  top: 35px;
+  right: -30px;
 }
 
 .cart-pop-up-container {
@@ -365,6 +368,17 @@ span.brator50 {
 
 .cart-pop-up-Continue-shopping {
   display: inline-block;
+  padding-bottom: 290px;
+}
+
+.cart-pop-up-Continue-shopping a {
+  text-decoration: none;
+  color: #000;
+}
+
+.cart-pop-up-Continue-shopping a:hover {
+  color: #e82a3a;
+  transition: all 0.5s ease;
 }
 
 .cart-pop-up-Continue-shopping p {
@@ -378,6 +392,101 @@ span.brator50 {
 
 .cart-pop-up-Continue-shopping p:hover {
   color: #e82a3a;
+}
+
+.cart-pop-up-subtotla {
+  padding: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.subtotal-left h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.subtotal-left p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+  max-width: 280px;
+}
+
+.subtotal-amount h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.cart-pop-up-add-order-note {
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.cart-pop-up-add-order-note p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 30px 0;
+}
+
+.cart-pop-up-add-order-note p a {
+  text-decoration: none;
+  color: #000;
+}
+
+.cart-pop-up-add-order-note p a:hover {
+  color: #e82a3a;
+  transition: all 0.5s ease;
+  text-decoration: underline;
+}
+
+.cart-pop-up-button-container {
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+}
+
+.button-container {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+}
+
+.cart-pop-up-view-cart {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  padding: 20px 95px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+}
+
+.cart-pop-up-view-cart:hover {
+  background-color: #e82a3a;
+  transition: all 0.5s ease;
+}
+
+.cart-pop-up-buy-now {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  padding: 20px 95px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #e82a3a;
+  color: #fff;
+}
+
+.cart-pop-up-buy-now:hover {
+  background-color: #000;
+  transition: all 0.5s ease;
 }
 
 /**************************** Cart Pop Up CSS End          ****************************/
@@ -509,6 +618,7 @@ span.brator50 {
   display: flex;
   align-items: center;
   gap: 20px;
+  position: relative;
 }
 
 .header-search-bar {
