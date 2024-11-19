@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Auto Parts</title>
+   <!-- css start -->
+   <link rel="stylesheet" href="./style.css">
+   <!-- css end -->
+   <!-- Swiper css CDN start -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <!-- Swiper css CDN end -->
+</head>
+
+<body>
+
+   <!-- header top start -->
+   <section class="header-top">
+      <div class="header-top-row">
+         <div class="container">
+            <div class="header-top-container">
+               <div class="header-top-left">
+                  <div class="header-top-left-content">
+                     <p>BLACK FRIDAY: Discount up to <span class="brator50">50%</span> use code <span
+                           class="brator50">Brator50</span></p>
+                  </div>
+                  <div class="header-top-right-btn">
+                     <a href="#">See more <img src="./img/icon/down-arrow.png" alt=""></a>
+                  </div>
+               </div>
+               <div class="header-top-right">
+                  <div class="header-top-right-number">
+                     <a href="tel:18005001234925">
+                        <div class="call-icon">
+                           <img src="./img/icon/call_icon.png" alt="">
+                        </div>
+                        <div class="number-text">
+                           <p>18005001234925</p>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="header-top-right-language">
+                     <select>
+                        <option value="">Select Language</option>
+                        <option value="">English</option>
+                        <option value="">Japanese</option>
+                        <option value="">Canadian</option>
+                     </select>
+                  </div>
+                  <div class="header-top-right-currency">
+                     <select>
+                        <option value="">Select Language</option>
+                        <option value="">United States (USD $)</option>
+                        <option value="">Japanese (Yen ¥)</option>
+                        <option value="">Canadian Dollar (CAD $)</option>
+                     </select>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- header top end -->
+
+   <!-- header menu start -->
+   <section class="header-menu">
+      <div class="header-menu-row">
+         <div class="container">
+            <div class="header-menu-container">
+               <div class="header-logo">
+                  <a href="#"><img src="./img/logo.png" alt=""></a>
+               </div>
+               <div class="header-search-bar">
+                  <div class="search-bar">
+                     <div class="header-search-input">
+                        <input class="search-field" type="search" placeholder="Search your parts">
+                     </div>
+                     <div class="header-categories">
+                        <img src="./img/icon/three-line-icon.png" alt="">
+                        <div class="select-categories">
+                           <select>
+                              <option value="">All Categories</option>
+                              <option value="Air Filters">Air Filters</option>
+                              <option value="Auto Parts">Auto Parts</option>
+                              <option value="Car Care">Car Care</option>
+                              <option value="Clearance">Clearance</option>
+                              <option value="Tire Chains">Tire Chains</option>
+                           </select>
+                        </div>
+                     </div>
+                     <button type="submit">
+                        <svg fill="#ffffff" width="52" height="52" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                           xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64">
+                           <path
+                              d="M62.1,57L44.6,42.8c3.2-4.2,5-9.3,5-14.7c0-6.5-2.5-12.5-7.1-17.1v0c-9.4-9.4-24.7-9.4-34.2,0C3.8,15.5,1.3,21.6,1.3,28c0,6.5,2.5,12.5,7.1,17.1c4.7,4.7,10.9,7.1,17.1,7.1c6.1,0,12.1-2.3,16.8-6.8l17.7,14.3c0.3,0.3,0.7,0.4,1.1,0.4c0.5,0,1-0.2,1.4-0.6C63,58.7,62.9,57.6,62.1,57z M10.8,42.7C6.9,38.8,4.8,33.6,4.8,28s2.1-10.7,6.1-14.6c4-4,9.3-6,14.6-6c5.3,0,10.6,2,14.6,6c3.9,3.9,6.1,9.1,6.1,14.6S43.9,38.8,40,42.7C32,50.7,18.9,50.7,10.8,42.7z">
+                           </path>
+                        </svg>
+                     </button>
+                  </div>
+               </div>
+               <div class="menu-items">
+
+                  <ul>
+                     <li class="hideOnMobile"><a href="#">Home</a></li>
+                     <li class="hideOnMobile"><a href="#">Categories</a></li>
+                     <li class="hideOnMobile"><a href="#">Wheels & Tires</a></li>
+                     <li class="hideOnMobile"><a href="#">Shop</a></li>
+                     <li class="hideOnMobile"><a href="#">Pages</a></li>
+                     <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+                     <li class="hideOnDesktop" onclick="openSideMenu()">
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                              fill="#5f6368">
+                              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                           </svg>
+                        </a>
+                     </li>
+                  </ul>
+
+                  <ul class="side-menu">
+                     <li onclick="closeSideMenu()">
+                        <a href="#">
+                           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                              fill="#5f6368">
+                              <path
+                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                           </svg>
+                        </a>
+                     </li>
+                     <li><a href="#">Home</a></li>
+                     <li><a href="#">Categories</a></li>
+                     <li><a href="#">Wheels & Tires</a></li>
+                     <li><a href="#">Shop</a></li>
+                     <li><a href="#">Pages</a></li>
+                     <li><a href="#">Contact Us</a></li>
+                  </ul>
+               </div>
+               <div class="header-user-cart">
+                  <div class="user-icon">
+                     <a href="#"><img src="./img/icon/user_icon.png" alt=""></a>
+                  </div>
+                  <div class="cart-icon">
+                     <a href="#"><img src="./img/icon/cart_icon.png" alt=""></a>
+                     <div class="cart-number">2</div>
+                  </div>
+
+                  <div class="cart-pop-up">
+                     <div class="cart-pop-up-container">
+                        <div class="cart-pop-up-top">
+                           <div class="cart-pop-up-top-left">
+                              <div class="cart-pop-up-top-left-head">
+                                 <h3>Your Cart</h3>
+                                 <h3>(2 items)</h3>
+                              </div>
+                              <p>You are eligible for free shipping.</p>
+                           </div>
+                           <div class="cart-pop-up-top-right">
+                              <svg width="18" height="19" viewBox="0 0 18 19" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M9.76183 9.42871L18 1.19054L17.2382 0.428711L9 8.66688L0.761828 0.428711L0 1.19054L8.23817 9.42871L0 17.6669L0.761827 18.4287L9 10.1905L17.2382 18.4287L18 17.6669L9.76183 9.42871Z"
+                                    fill="black" />
+                              </svg>
+                           </div>
+                        </div>
+                        <div class="cart-pop-up-top-divider"></div>
+                        <div class="cart-pop-up-bottom">
+                           <div class="cart-pop-up-bottom-products">
+                              <div class="cart-pop-up-bottom-single-product">
+                                 <div class="cart-pop-up-bottom-product-left">
+                                    <div class="cart-pop-up-bottom-prduct-left-img">
+                                       <img src="./img/product/cart/cart-product-01.png" alt="">
+                                    </div>
+                                    <div class="cart-pop-up-bottom-title-quantity">
+                                       <div class="cart-pop-up-bottom-prduct-left-content">
+                                          <h4>M195 METHOS Black with Bronze Face</h4>
+                                       </div>
+                                       <div class="cart-pop-up-bottom-prduct-left-quantity">
+                                          <button class="quantity-btn minus">-</button>
+                                          <input type="number" value="1" min="1" class="quantity-input">
+                                          <button class="quantity-btn plus">+</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="cart-pop-up-bottom-product-right">
+                                    <div class="product-price">
+                                       <h4><span>1 x</span> $ 200</h4>
+                                    </div>
+                                    <div class="product-remove">
+                                       <p>Remove</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="cart-pop-up-bottom-single-product">
+                                 <div class="cart-pop-up-bottom-product-left">
+                                    <div class="cart-pop-up-bottom-prduct-left-img">
+                                       <img src="./img/product/cart/cart-product-01.png" alt="">
+                                    </div>
+                                    <div class="cart-pop-up-bottom-title-quantity">
+                                       <div class="cart-pop-up-bottom-prduct-left-content">
+                                          <h4>M195 METHOS Black with Bronze Face</h4>
+                                       </div>
+                                       <div class="cart-pop-up-bottom-prduct-left-quantity">
+                                          <button class="quantity-btn minus">-</button>
+                                          <input type="number" value="1" min="1" class="quantity-input">
+                                          <button class="quantity-btn plus">+</button>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="cart-pop-up-bottom-product-right">
+                                    <div class="product-price">
+                                       <h4><span>1 x</span> $ 200</h4>
+                                    </div>
+                                    <div class="product-remove">
+                                       <p>Remove</p>
+                                    </div>
+                                 </div>
+                              </div>
+                              <!-- <div class="cart-pop-up-bottom-product-divider"></div> -->
+                           </div>
+
+                           <div class="cart-pop-up-frequently-bought">
+
+                              <div class="frequently-bought-title">
+                                 <h3>Frequently Bought Together</h3>
+                              </div>
+                              <div class="frequently-bought-products">
+                                 <div class="frequently-bought-single-product">
+                                    <div class="frequently-bought-product-left">
+                                       <div class="frequently-bought-prduct-left-img">
+                                          <img src="./img/product/cart/cart-product-01.png" alt="">
+                                       </div>
+                                       <div class="frequently-bought-product-right-content">
+                                          <div class="frequently-bought-prduct-title">
+                                             <h4>M195 METHOS Black with Bronze Face</h4>
+                                          </div>
+                                          <div class="frequently-bought-product-price">
+                                             <h4>$ 200</h4>
+                                          </div>
+                                          <div class="frequently-bought-product-addToCart">
+                                             <p>Add to Cart</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <div class="frequently-bought-single-product">
+                                    <div class="frequently-bought-product-left">
+                                       <div class="frequently-bought-prduct-left-img">
+                                          <img src="./img/product/cart/cart-product-01.png" alt="">
+                                       </div>
+                                       <div class="frequently-bought-product-right-content">
+                                          <div class="frequently-bought-prduct-title">
+                                             <h4>M195 METHOS Black with Bronze Face</h4>
+                                          </div>
+                                          <div class="frequently-bought-product-price">
+                                             <h4>$ 200</h4>
+                                          </div>
+                                          <div class="frequently-bought-product-addToCart">
+                                             <p>Add to Cart</p>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="cart-pop-up-Continue-shopping">
+                                 <p><a href="#">Continue Shopping</a></p>
+                              </div>
+                              <div class="cart-pop-up-top-divider"></div>
+                              <div class="cart-pop-up-subtotla">
+                                 <div class="subtotal-left">
+                                    <h3>Subtotal</h3>
+                                    <p>Tax included and shipping calculated at checkout</p>
+                                 </div>
+                                 <div class="subtotal-right">
+                                    <div class="subtotal-amount">
+                                       <h3>$ 120.99</h3>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="cart-pop-up-add-order-note">
+                                 <p><a href="#">Add order note +</a></p>
+                              </div>
+
+                              <div class="cart-pop-up-button-container">
+                                 <button class="cart-pop-up-view-cart">View Cart</button>
+                                 <button class="cart-pop-up-buy-now">Buy it Now</button>
+                              </div>
+
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- header menu end -->
+
+
+   <!-- checkout page start -->
+
+   <section class="checkout-page">
+      <div class="container">
+         <div class="cart-container-row">
+            <div class="checkout-left-content">
+               <div class="free-shipping-message">
+                  Your order qualifies for free shipping!
+               </div>
+               <table class="cart-table">
+                  <thead>
+                     <tr>
+                        <th>Product Name</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Subtotal</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>
+                           <div class="product">
+                              <img src="./img/product/cart/cart-product-01.png"
+                                 alt="M195 METHOD Black with Bronze Face">
+                              <span>M195 METHOD Black with Bronze Face</span>
+                           </div>
+                        </td>
+                        <td>$00.00</td>
+                        <td>
+                           <div class="quantity">
+                              <button class="qty-btn">-</button>
+                              <input type="text" value="1" class="qty-input">
+                              <button class="qty-btn">+</button>
+                           </div>
+                        </td>
+                        <td>$00.00</td>
+                        <td>
+                           <button class="delete-btn">
+                              <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M19.25 4.5L18.625 15.132C18.5913 15.705 18.3399 16.2436 17.9222 16.6373C17.5045 17.031 16.952 17.2502 16.378 17.25H5.622C5.04796 17.2502 4.49555 17.031 4.07783 16.6373C3.66011 16.2436 3.40868 15.705 3.375 15.132L2.75 4.5M8.75 8.625L11 10.875M11 10.875L13.25 13.125M11 10.875L13.25 8.625M11 10.875L8.75 13.125M2.375 4.5H19.625C20.246 4.5 20.75 3.996 20.75 3.375V1.875C20.75 1.254 20.246 0.75 19.625 0.75H2.375C1.754 0.75 1.25 1.254 1.25 1.875V3.375C1.25 3.996 1.754 4.5 2.375 4.5Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                           </button>
+                        </td>
+                     </tr>
+                     <tr>
+                        <td>
+                           <div class="product">
+                              <img src="./img/product/cart/cart-product-01.png"
+                                 alt="M195 METHOD Black with Bronze Face">
+                              <span>M195 METHOD Black with Bronze Face</span>
+                           </div>
+                        </td>
+                        <td>$00.00</td>
+                        <td>
+                           <div class="quantity">
+                              <button class="qty-btn">-</button>
+                              <input type="text" value="1" class="qty-input">
+                              <button class="qty-btn">+</button>
+                           </div>
+                        </td>
+                        <td>$00.00</td>
+                        <td>
+                           <button class="delete-btn">
+                              <svg width="22" height="18" viewBox="0 0 22 18" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                 <path
+                                    d="M19.25 4.5L18.625 15.132C18.5913 15.705 18.3399 16.2436 17.9222 16.6373C17.5045 17.031 16.952 17.2502 16.378 17.25H5.622C5.04796 17.2502 4.49555 17.031 4.07783 16.6373C3.66011 16.2436 3.40868 15.705 3.375 15.132L2.75 4.5M8.75 8.625L11 10.875M11 10.875L13.25 13.125M11 10.875L13.25 8.625M11 10.875L8.75 13.125M2.375 4.5H19.625C20.246 4.5 20.75 3.996 20.75 3.375V1.875C20.75 1.254 20.246 0.75 19.625 0.75H2.375C1.754 0.75 1.25 1.254 1.25 1.875V3.375C1.25 3.996 1.754 4.5 2.375 4.5Z"
+                                    stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                           </button>
+                        </td>
+                     </tr>
+                  </tbody>
+               </table>
+               <div class="coupon-section">
+                  <input type="text" placeholder="Coupon code" class="coupon-input">
+                  <button class="apply-btn">Apply coupon</button>
+               </div>
+            </div>
+            <div class="checkout-right-content">
+               <div class="billing-summary">
+                  <h2>Billing Summary</h2>
+                  <div class="summary-item">
+                     <span>Subtotal</span>
+                     <span>$300.27</span>
+                  </div>
+                  <div class="summary-item">
+                     <span>Discount</span>
+                     <span>-$121.99</span>
+                  </div>
+                  <div class="summary-item">
+                     <span>Shipping</span>
+                     <span>$0.00</span>
+                  </div>
+                  <div class="summary-item">
+                     <span>Tax</span>
+                     <span>$000.00</span>
+                  </div>
+                  <a href="#" class="change-address">Change address</a>
+                  <hr>
+                  <div class="summary-total">
+                     <span>Total</span>
+                     <span>$0,000.00</span>
+                  </div>
+                  <div class="order-note">
+                     <label for="order-note">Order note</label>
+                     <textarea id="order-note" placeholder="Type here..."></textarea>
+                  </div>
+
+
+                  <button class="checkout-btn">Proceed to Checkout</button>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+
+
+   <!-- checkout page end -->
+
+
+
+
+   <!-- newslatter section start -->
+   <section class="newslatter-section">
+      <div class="container">
+         <div class="newslatter-row">
+            <div class="newslatter-content">
+               <div class="newslatter-icon">
+                  <img src="./img/icon/mail-box_icon.png" alt="">
+               </div>
+               <div class="newslatter-subscrib-content">
+                  <p class="newslatter-join-offs">Join our newsletter for $25 offs</p>
+                  <h3>Subscribe To Our Newsletter Get 10% Discount</h3>
+                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+               </div>
+            </div>
+            <div class="newslatter-subscrib-form">
+               <form action="">
+                  <input type="email" placeholder="Enter your email address">
+                  <button type="submit">Subscribe</button>
+                  <p>By subscribing you agree to our <span class="newslatter-terms"> <a href="#">Terms & Conditions and
+                           Privacy & Policy.</a></span></p>
+               </form>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- newslatter section end -->
+
+   <!-- our service section start -->
+   <section class="our-service-section">
+      <div class="container">
+         <div class="our-service-row">
+            <div class="our-service-content">
+               <div class="our-service-items">
+                  <div class="our-service-item">
+                     <div class="our-service-title">
+                        <h3>Original Products</h3>
+                     </div>
+                     <div class="our-service-description">
+                        <p>Only parts from trusted brands</p>
+                     </div>
+                  </div>
+
+                  <div class="our-service-item">
+                     <div class="our-service-title">
+                        <h3>Free Delivery</h3>
+                     </div>
+                     <div class="our-service-description">
+                        <p>for all orders over $200</p>
+                     </div>
+                  </div>
+
+                  <div class="our-service-item">
+                     <div class="our-service-title">
+                        <h3>30 Days Returns</h3>
+                     </div>
+                     <div class="our-service-description">
+                        <p>30 days open purchase</p>
+                     </div>
+                  </div>
+
+                  <div class="our-service-item">
+                     <div class="our-service-title">
+                        <h3>Dedicated Support</h3>
+                     </div>
+                     <div class="our-service-description">
+                        <p>We support both Sat & Sun</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </section>
+   <!-- our service section end -->
+
+   <!-- footer section start -->
+   <footer class="auto-parts-footer-section">
+
+      <div class="auto-parts-footer-top">
+         <div class="container">
+            <div class="footer-top-row">
+               <div class="auto-parts-content">
+
+                  <div class="auto-parts-catalog">
+                     <h3>Brator’s Catalog</h3>
+                     <ul>
+                        <li><a href="#">Auto Parts</a></li>
+                        <li><a href="#">Car Care</a></li>
+                        <li><a href="#">Fluids & Chemicals</a></li>
+                        <li><a href="#">Oils Tools & Supplies</a></li>
+                        <li><a href="#">Wheel & Tires</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="auto-parts-information">
+                     <h3>Information</h3>
+                     <ul>
+                        <li><a href="#">News</a></li>
+                        <li><a href="#">Some collections</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="auto-parts-customer">
+                     <h3>Customer Service</h3>
+                     <ul>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                     </ul>
+                  </div>
+
+                  <div class="auto-parts-footer-about">
+                     <div class="auto-parts-footer-logo">
+                        <a href="#"><img src="./img/footer-logo.png" alt=""></a>
+                     </div>
+
+                     <div class="auto-parts-footer-tagline">
+                        <p>#1 US's biggest online marketplace for car spare OEM & Aftermarkets.</p>
+                     </div>
+
+                     <div class="auto-parts-footer-day-time">
+                        <p>Monday - Friday: 9:00-20:00</p>
+                        <p>Saturady: 11:00 - 15:00</p>
+                     </div>
+
+                     <div class="auto-parts-footer-contact">
+                        <a href="mailto:info@example.com">info@example.com</a>
+                     </div>
+                  </div>
+
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <div class="auto-parts-footer-bottom">
+         <div class="container">
+            <div class="footer-bottom-row">
+               <div class="footer-bottom-app">
+                  <p>Shopping Faster with Brator App</p>
+                  <div class="apps-logo">
+                     <a href="#"><img src="./img/apple_app.png" alt=""></a>
+                     <a href="#"><img src="./img/android_app.png" alt=""></a>
+                  </div>
+               </div>
+               <div class="footer-bottom-menu">
+                  <ul>
+                     <li><a href="#">Privacy Policy</a></li>
+                     <li><a href="#">Order Tracking</a></li>
+                     <li><a href="#">Terms and Conditions</a></li>
+                     <li><a href="#">Refund and Returns Policy</a></li>
+                  </ul>
+                  <p>Copyright 2023 © Partdo WordPress Theme. All right reserved. Powered by <a href="#">KLBTheme</a>.
+                  </p>
+               </div>
+               <div class="footer-bottom-payment-logo">
+                  <img src="./img/credit-cards.png" alt="">
+               </div>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <!-- footer section end -->
+
+</body>
+
+</html>
