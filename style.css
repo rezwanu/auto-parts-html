@@ -4503,4 +4503,298 @@ hr {
   background-color: #b71c1c;
 }
 
-/**************************** Checkout Page CSS Ennd ****************************/
+/********************* checkout page media query css start **************/
+
+@media (max-width: 1199px) {
+  .cart-container-row {
+    flex-wrap: wrap;
+  }
+
+  .checkout-left-content,
+  .checkout-right-content {
+    width: 100%;
+  }
+
+  .checkout-right-content {
+    margin-top: 20px;
+  }
+
+  .billing-summary {
+    width: 100%;
+  }
+
+  /* .summary-item,
+  .summary-total {
+    font-size: 25px;
+  }
+
+  
+
+  .change-address {
+    font-size: 14px;
+  }
+
+  .order-note label {
+    font-size: 20px;
+  }
+
+  .order-note textarea {
+    font-size: 20px;
+  }
+
+  .checkout-btn {
+    font-size: 20px;
+  } */
+}
+
+@media (max-width: 992px) {
+  .free-shipping-message {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 20px;
+  }
+
+  .product img {
+    width: 65px;
+    height: 65px;
+    margin-right: 20px;
+  }
+
+  .product span {
+    font-size: 14px;
+    max-width: 120px;
+  }
+
+  .coupon-input {
+    width: calc(100% - 110px);
+    margin-right: 10px;
+  }
+
+  .apply-btn {
+    padding: 15px 20px;
+  }
+
+  .billing-summary {
+    width: 100%;
+  }
+
+  .billing-summary h2 {
+    font-size: 18px;
+  }
+
+  .summary-item,
+  .summary-total {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cart-container-row {
+    flex-direction: column;
+  }
+
+  .free-shipping-message {
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .cart-table th,
+  .cart-table td {
+    padding: 10px;
+  }
+
+  .product img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .product span {
+    font-size: 12px;
+    max-width: 100px;
+  }
+
+  .quantity .qty-btn {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .qty-input {
+    width: 30px;
+    font-size: 14px;
+  }
+
+  .coupon-input {
+    width: calc(100% - 100px);
+    padding: 17px;
+  }
+
+  .apply-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  .billing-summary h2 {
+    font-size: 16px;
+  }
+
+  .summary-item,
+  .summary-total {
+    font-size: 14px;
+  }
+
+  .checkout-btn {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .cart-table {
+    display: block;
+  }
+
+  .cart-table tr {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .cart-table th {
+    padding: 10px;
+  }
+
+  .cart-table td {
+    /* display: flex; */
+    justify-content: space-between;
+    padding: 8px;
+  }
+
+  .product {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .product img {
+    margin-bottom: 8px;
+  }
+
+  .coupon-input {
+    width: 100%;
+    /* margin-bottom: 10px; */
+  }
+
+  .apply-btn {
+    /* width: 100%; */
+    text-align: center;
+    padding: 8px 15px;
+  }
+
+  .order-note textarea {
+    height: 80px;
+  }
+
+  .checkout-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+/**************************** Checkout Page media query CSS End *************/
+/**************************** Checkout Page CSS End *************************/
+
+/**************************** Contact us Page css start *************/
+
+.contact-us-section {
+  padding: 100px 0;
+}
+
+.contact-us-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.contact-us-left {
+  width: 70%;
+}
+
+.contact-us-right {
+  width: 30%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-form textarea {
+  resize: none;
+  height: 100px;
+}
+
+.contact-form button {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #333;
+}
+
+.contact-container {
+  text-align: left;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+}
+
+.contact-item h3 {
+  font-size: 16px;
+  margin: 0;
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+.contact-item p {
+  font-size: 14px;
+  color: #666;
+  margin: 5px 0 15px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.map-container iframe {
+  border-radius: 10px;
+}
+
+/**************************** Contact us Page css End *************/
