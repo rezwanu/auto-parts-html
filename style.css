@@ -1349,7 +1349,7 @@ span.brator50 {
 }
 
 .product-vat {
-  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .product-stock {
@@ -5779,14 +5779,15 @@ hr {
 .shop-page-list-single-product-item {
   display: flex;
   align-items: center;
-  border: 1px solid red;
+  border: 1px solid #d3d3d3;
   border-radius: 10px;
+  padding: 10px;
 }
 
 .shop-page-list-product-item-image {
   width: 15%;
   height: auto;
-  border-right: 1px solid red;
+  border-right: 1px solid #d3d3d3;
 }
 
 .shop-page-list-product-item-image img {
@@ -5809,7 +5810,7 @@ hr {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-left: 1px solid red;
+  border-left: 1px solid #d3d3d3;
 }
 
 .shop-page-list-product-item-list-content ul {
@@ -5831,8 +5832,46 @@ hr {
   width: 3px;
   height: 3px;
   border-radius: 50%;
-  /* display: inline-block; */
-  /* margin-left: -1em; */
+  top: 13px;
+  left: -10px;
+}
+
+.shop-page-list-filter-navigation {
+  display: flex;
+  gap: 25px;
+  padding-top: 25px;
+}
+
+.shop-page-list-filter-clear {
+  display: flex;
+  align-items: center;
+}
+
+.shop-page-list-filter-exhaust {
+  display: flex;
+  gap: 5px;
+  width: 13%;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.shop-page-list-filter-hammer {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.shop-page-list-filter-exhaust svg,
+.shop-page-list-filter-hammer svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* Shop Page List Product Section CSS End */
+/* Shop page Two Column Section CSS Start */
+
+.two-column-shop-page-row {
+  display: flex;
+}
+
+/* Shop page Two Column Section CSS End */
