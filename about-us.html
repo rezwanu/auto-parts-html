@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+  <!-- css start -->
+  <link rel="stylesheet" href="./style.css">
+  <!-- css end -->
+  <!-- Swiper css CDN start -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- Swiper css CDN end -->
+</head>
+
+<body>
+
+  <!-- header top start -->
+  <section class="header-top">
+    <div class="header-top-row">
+      <div class="container">
+        <div class="header-top-container">
+          <div class="header-top-left">
+            <div class="header-top-left-content">
+              <p>BLACK FRIDAY: Discount up to <span class="brator50">50%</span> use code <span
+                  class="brator50">Brator50</span></p>
+            </div>
+            <div class="header-top-right-btn">
+              <a href="#">See more <img src="./img/icon/down-arrow.png" alt=""></a>
+            </div>
+          </div>
+          <div class="header-top-right">
+            <div class="header-top-right-number">
+              <a href="tel:18005001234925">
+                <div class="call-icon">
+                  <img src="./img/icon/call_icon.png" alt="">
+                </div>
+                <div class="number-text">
+                  <p>18005001234925</p>
+                </div>
+              </a>
+            </div>
+            <div class="header-top-right-language">
+              <select>
+                <option value="">Select Language</option>
+                <option value="">English</option>
+                <option value="">Japanese</option>
+                <option value="">Canadian</option>
+              </select>
+            </div>
+            <div class="header-top-right-currency">
+              <select>
+                <option value="">Select Language</option>
+                <option value="">United States (USD $)</option>
+                <option value="">Japanese (Yen ¥)</option>
+                <option value="">Canadian Dollar (CAD $)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- header top end -->
+
+  <!-- header menu start -->
+  <section class="header-menu">
+    <div class="header-menu-row">
+      <div class="container">
+        <div class="header-menu-container">
+          <div class="header-logo">
+            <a href="#"><img src="./img/logo.png" alt=""></a>
+          </div>
+          <div class="header-search-bar">
+            <div class="search-bar">
+              <div class="header-search-input">
+                <input class="search-field" type="search" placeholder="Search your parts">
+              </div>
+              <div class="header-categories">
+                <img src="./img/icon/three-line-icon.png" alt="">
+                <div class="select-categories">
+                  <select>
+                    <option value="">All Categories</option>
+                    <option value="Air Filters">Air Filters</option>
+                    <option value="Auto Parts">Auto Parts</option>
+                    <option value="Car Care">Car Care</option>
+                    <option value="Clearance">Clearance</option>
+                    <option value="Tire Chains">Tire Chains</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit">
+                <svg fill="#ffffff" width="52" height="52" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 64 64">
+                  <path
+                    d="M62.1,57L44.6,42.8c3.2-4.2,5-9.3,5-14.7c0-6.5-2.5-12.5-7.1-17.1v0c-9.4-9.4-24.7-9.4-34.2,0C3.8,15.5,1.3,21.6,1.3,28c0,6.5,2.5,12.5,7.1,17.1c4.7,4.7,10.9,7.1,17.1,7.1c6.1,0,12.1-2.3,16.8-6.8l17.7,14.3c0.3,0.3,0.7,0.4,1.1,0.4c0.5,0,1-0.2,1.4-0.6C63,58.7,62.9,57.6,62.1,57z M10.8,42.7C6.9,38.8,4.8,33.6,4.8,28s2.1-10.7,6.1-14.6c4-4,9.3-6,14.6-6c5.3,0,10.6,2,14.6,6c3.9,3.9,6.1,9.1,6.1,14.6S43.9,38.8,40,42.7C32,50.7,18.9,50.7,10.8,42.7z">
+                  </path>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="menu-items">
+            <ul>
+              <li class="hideOnMobile"><a href="#">Home</a></li>
+              <li class="hideOnMobile"><a href="#">Categories</a></li>
+              <li class="hideOnMobile"><a href="#">Wheels & Tires</a></li>
+              <li class="hideOnMobile"><a href="#">Shop</a></li>
+              <li class="hideOnMobile"><a href="#">Pages</a></li>
+              <li class="hideOnMobile"><a href="#">Contact Us</a></li>
+              <li class="hideOnDesktop" onclick="openSideMenu()">
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
+                    fill="#5f6368">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                  </svg>
+                </a>
+              </li>
+            </ul>
+
+            <ul class="side-menu">
+              <li onclick="closeSideMenu()">
+                <a href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                    fill="#5f6368">
+                    <path
+                      d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                  </svg>
+                </a>
+              </li>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Categories</a></li>
+              <li><a href="#">Wheels & Tires</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">Pages</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="header-user-cart">
+            <div class="user-icon">
+              <a href="#"><img src="./img/icon/user_icon.png" alt=""></a>
+            </div>
+            <div class="cart-icon">
+              <a href="#"><img src="./img/icon/cart_icon.png" alt=""></a>
+              <div class="cart-number">2</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- header menu end -->
+
+
+  <!-- About us start -->
+  <section class="about-us-section">
+    <div class="container">
+      <div class="about-us-row">
+        <div class="about-us-left-content">
+          <h1>Greetings! We're Benji, a Tokyo based creative agency.Feel free to explore and </h1>
+
+          <div class="about-us-left-content-counter">
+            <div class="about-us-worldwide-counter counter-item">
+              <h4>1.7M<span>+</span></h4>
+              <p>Stock Keeping Unitson Worldwide</p>
+            </div>
+
+            <div class="about-us-Served-counter counter-item">
+              <h4>300K<span>+</span></h4>
+              <p>Stock Keeping Unitson Worldwide</p>
+            </div>
+
+            <div class="about-us-unitson-counter counter-item">
+              <h4>9K<span>+</span></h4>
+              <p>Stock Keeping Unitson Worldwide</p>
+            </div>
+
+            <div class="about-us-stock-counter counter-item">
+              <h4>10K<span>+</span></h4>
+              <p>Stock Keeping Unitson Worldwide</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="about-us-right-content">
+          <img src="./img/about-us.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- About us end -->
+
+
+  <!-- Leadership Section start -->
+
+
+  <!-- Leadership section End -->
+
+
+
+
+
+  <!-- newslatter section start -->
+  <section class="newslatter-section">
+    <div class="container">
+      <div class="newslatter-row">
+        <div class="newslatter-content">
+          <div class="newslatter-icon">
+            <img src="./img/icon/mail-box_icon.png" alt="">
+          </div>
+          <div class="newslatter-subscrib-content">
+            <p class="newslatter-join-offs">Join our newsletter for $25 offs</p>
+            <h3>Subscribe To Our Newsletter Get 10% Discount</h3>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+          </div>
+        </div>
+        <div class="newslatter-subscrib-form">
+          <form action="">
+            <input type="email" placeholder="Enter your email address">
+            <button type="submit">Subscribe</button>
+            <p>By subscribing you agree to our <span class="newslatter-terms"> <a href="#">Terms & Conditions and
+                  Privacy & Policy.</a></span></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- newslatter section end -->
+
+  <!-- our service section start -->
+  <section class="our-service-section">
+    <div class="container">
+      <div class="our-service-row">
+        <div class="our-service-content">
+          <div class="our-service-items">
+            <div class="our-service-item">
+              <div class="our-service-title">
+                <h3>Original Products</h3>
+              </div>
+              <div class="our-service-description">
+                <p>Only parts from trusted brands</p>
+              </div>
+            </div>
+
+            <div class="our-service-item">
+              <div class="our-service-title">
+                <h3>Free Delivery</h3>
+              </div>
+              <div class="our-service-description">
+                <p>for all orders over $200</p>
+              </div>
+            </div>
+
+            <div class="our-service-item">
+              <div class="our-service-title">
+                <h3>30 Days Returns</h3>
+              </div>
+              <div class="our-service-description">
+                <p>30 days open purchase</p>
+              </div>
+            </div>
+
+            <div class="our-service-item">
+              <div class="our-service-title">
+                <h3>Dedicated Support</h3>
+              </div>
+              <div class="our-service-description">
+                <p>We support both Sat & Sun</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- our service section end -->
+
+  <!-- footer section start -->
+  <footer class="auto-parts-footer-section">
+
+    <div class="auto-parts-footer-top">
+      <div class="container">
+        <div class="footer-top-row">
+          <div class="auto-parts-content">
+
+            <div class="auto-parts-catalog">
+              <h3>Brator’s Catalog</h3>
+              <ul>
+                <li><a href="#">Auto Parts</a></li>
+                <li><a href="#">Car Care</a></li>
+                <li><a href="#">Fluids & Chemicals</a></li>
+                <li><a href="#">Oils Tools & Supplies</a></li>
+                <li><a href="#">Wheel & Tires</a></li>
+              </ul>
+            </div>
+
+            <div class="auto-parts-information">
+              <h3>Information</h3>
+              <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Some collections</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Order Status</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+
+            <div class="auto-parts-customer">
+              <h3>Customer Service</h3>
+              <ul>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">My Account</a></li>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </div>
+
+            <div class="auto-parts-footer-about">
+              <div class="auto-parts-footer-logo">
+                <a href="#"><img src="./img/footer-logo.png" alt=""></a>
+              </div>
+
+              <div class="auto-parts-footer-tagline">
+                <p>#1 US's biggest online marketplace for car spare OEM & Aftermarkets.</p>
+              </div>
+
+              <div class="auto-parts-footer-day-time">
+                <p>Monday - Friday: 9:00-20:00</p>
+                <p>Saturady: 11:00 - 15:00</p>
+              </div>
+
+              <div class="auto-parts-footer-contact">
+                <a href="mailto:info@example.com">info@example.com</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="auto-parts-footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-row">
+          <div class="footer-bottom-app">
+            <p>Shopping Faster with Brator App</p>
+            <div class="apps-logo">
+              <a href="#"><img src="./img/apple_app.png" alt=""></a>
+              <a href="#"><img src="./img/android_app.png" alt=""></a>
+            </div>
+          </div>
+          <div class="footer-bottom-menu">
+            <ul>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Order Tracking</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Refund and Returns Policy</a></li>
+            </ul>
+            <p>Copyright 2023 © Partdo WordPress Theme. All right reserved. Powered by <a href="#">KLBTheme</a>.</p>
+          </div>
+          <div class="footer-bottom-payment-logo">
+            <img src="./img/credit-cards.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- footer section end -->
+
+
+  <!-- Swiper js CDN start -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Swiper js CDN end -->
+  <!-- custom js start-->
+  <script src="./custom.js"></script>
+  <!-- custom js end-->
+
+  <!-- isotop js start -->
+  <script src="./isotope.pkgd.min.js"></script>
+  <!-- isotop js end -->
+
+</body>
+
+</html>

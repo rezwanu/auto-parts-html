@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shop Page</title>
+  <title>Shop Page Product Two column</title>
   <!-- css start -->
   <link rel="stylesheet" href="./style.css">
   <!-- css end -->
@@ -156,6 +156,27 @@
 
   <section class="shop-page-two-column-section">
     <div class="container">
+
+      <div class="shop-page-breadcrumb">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <span>></span>
+          <li><a href="#">Shop</a></li>
+        </ul>
+
+        <div class="shop-page-breadcrumb-banner">
+          <div class="breadcrumb-img">
+            <img src="./img/banner/breadcrumb-banner.png" alt="">
+            <div class="breadcrumb-content">
+              <h2>Auto Parts</h2>
+              <p>You can find components related towheels & tyres here aswheels, tyres, TPMS sensors, center caps, etc
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <div class="two-column-shop-page-row">
 
         <div class="shop-page-product-grid-sidebar">
@@ -355,26 +376,88 @@
           </ul>
         </div>
 
-        <div class="shop-page-product-grid-content">
-          <div class="best-single-product">
-            <div class="single-product-items">
+        <div class="two-column-shop-page-product-grid-content">
 
-              <div class="product-item">
-                <div class="product-item-image">
+          <div class="shop-page-product-grid-top-bar">
+            <div class="results-toolbar">
+              <div class="view-options">
+                <button class="view-option active" aria-label="Grid view">
+                  <span class="grid-icon">
+                    <img src="./img/icon/grid-icon.png" alt="">
+                  </span>
+                </button>
+                <button class="view-option" aria-label="List view">
+                  <span class="list-icon"></span>
+                </button>
+                <button class="pause-button">||</button>
+              </div>
+
+              <span class="results-info">Showing 1–16 of 37 results</span>
+              <div class="controls">
+                <div class="sort">
+                  <span>Sort:</span>
+                  <select aria-label="Sort by">
+                    <option>Sort by latest</option>
+                    <option>Sort by relevance</option>
+                    <option>Sort by popularity</option>
+                  </select>
+                </div>
+                <div class="show">
+                  <span>Show:</span>
+                  <select aria-label="Items per page">
+                    <option>32 Items</option>
+                    <option>16 Items</option>
+                    <option>64 Items</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shop-page-list-filter-navigation">
+            <div class="shop-page-list-filter-clear">
+              <p>Clear</p>
+            </div>
+
+            <div class="shop-page-list-filter-exhaust">
+              <p>Exhaust System</p>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                <path
+                  d="M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z" />
+              </svg>
+            </div>
+
+            <div class="shop-page-list-filter-hammer">
+              <p>Hammer</p>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24px" height="24px">
+                <path
+                  d="M 4.9902344 3.9902344 A 1.0001 1.0001 0 0 0 4.2929688 5.7070312 L 10.585938 12 L 4.2929688 18.292969 A 1.0001 1.0001 0 1 0 5.7070312 19.707031 L 12 13.414062 L 18.292969 19.707031 A 1.0001 1.0001 0 1 0 19.707031 18.292969 L 13.414062 12 L 19.707031 5.7070312 A 1.0001 1.0001 0 0 0 18.980469 3.9902344 A 1.0001 1.0001 0 0 0 18.292969 4.2929688 L 12 10.585938 L 5.7070312 4.2929688 A 1.0001 1.0001 0 0 0 4.9902344 3.9902344 z" />
+              </svg>
+            </div>
+
+          </div>
+
+          <div class="two-column-best-single-product">
+
+            <div class="two-column-single-product-items">
+
+              <div class="two-column-product-item">
+                <div class="two-column-product-item-image">
                   <img src="./img/product/product-01.png" alt="">
                 </div>
-                <div class="product-item-content">
-                  <p class="product-brand">Brand name</p>
+
+                <div class="two-column-product-item-content">
+                  <p class="two-column-product-brand">Brand name</p>
                   <h3><a href="#">Complete Strut Assembly by Bant Loaded</a></h3>
-                  <p class="product-description">Width: 145Profile: 80Rim Size: 13</p>
+                  <p class="two-column-product-description">Width: 145Profile: 80Rim Size: 13</p>
 
-                  <div class="product-price-box">
-                    <p class="product-price">$21.99</p>
-                    <p class="product-old-price">$15.99</p>
+                  <div class="two-column-product-price-box">
+                    <p class="two-column-product-price">$21.99</p>
+                    <p class="two-column-product-old-price">$15.99</p>
                   </div>
-                  <p class="product-vat">Incl. 20% VAT</p>
+                  <p class="two-column-product-vat">Incl. 20% VAT</p>
 
-                  <div class="product-stock">
+                  <div class="two-column-product-stock">
                     <p> <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M7.95071 16.5C7.27536 16.5 6.60768 16.3542 6.07814 16.0626L1.98 13.7833C0.867201 13.1694 0 11.6882 0 10.4142V6.07814C0 4.80418 0.867201 3.33072 1.98 2.70909L6.07814 0.437443C7.12954 -0.145814 8.77188 -0.145814 9.82327 0.437443L13.9214 2.71673C15.0342 3.33069 15.9014 4.81186 15.9014 6.08582V10.4219C15.9014 11.6959 15.0342 13.1693 13.9214 13.7909L9.82327 16.0626C9.29374 16.3542 8.62606 16.5 7.95071 16.5ZM7.95071 1.15116C7.46722 1.15116 6.99141 1.25093 6.63839 1.44279L5.46667 2.09447L11.8216 5.76417L14.1257 4.43113C13.9028 4.13094 13.638 3.87777 13.3612 3.72208L9.26303 1.44279C8.91001 1.25093 8.4342 1.15116 7.95071 1.15116ZM11.2134 7.45377V9.2016C11.2134 9.51625 11.4743 9.77718 11.789 9.77718C12.1036 9.77718 12.3646 9.51627 12.3646 9.21697V6.78695L14.6505 5.46284C14.7146 5.67666 14.7503 5.88838 14.7503 6.08582V10.4219C14.7503 11.2738 14.0979 12.3712 13.3612 12.7856L9.26303 15.0649C9.05505 15.1815 8.8001 15.2633 8.52617 15.3105V9.01034L11.2134 7.45377ZM10.6816 6.42375L7.94949 8.00448L1.77438 4.43095C1.99751 4.13089 2.26289 3.87809 2.54024 3.72208L4.3002 2.74323L10.6816 6.42375ZM7.375 9.00732L1.25004 5.46275C1.18651 5.67594 1.15117 5.88753 1.15117 6.08582V10.4219C1.15117 11.2661 1.80349 12.3712 2.54024 12.7856L6.63839 15.0649C6.84631 15.1815 7.10116 15.2633 7.375 15.3104V9.00732Z"
@@ -383,36 +466,38 @@
                       In Stock</p>
                   </div>
 
-                  <div class="product-stock-progress-bar">
-                    <div class="progress-bar">
-                      <div class="incomplete" style="width: 30%;"></div>
+                  <div class="two-column-product-stock-progress-bar">
+                    <div class="two-column-progress-bar">
+                      <div class="two-column-incomplete" style="width: 30%;"></div>
                     </div>
-                    <div class="product-quantity">
+                    <div class="two-column-product-quantity">
                       <p>Available: <span>23</span></p>
                       <p>Sold: <span>77</span></p>
                     </div>
                   </div>
                 </div>
-                <div class="product-badge">
-                  <p class="product-new">NEW</p>
+                <div class="two-column-product-badge">
+                  <p class="two-column-product-new">NEW</p>
                 </div>
-
               </div>
 
-              <div class="product-item">
-                <div class="product-item-image">
+              <div class="two-column-product-item">
+                <div class="two-column-product-item-image">
                   <img src="./img/product/product-02.png" alt="">
                 </div>
-                <div class="product-item-content">
-                  <p class="product-brand">Brand name</p>
+
+                <div class="two-column-product-item-content">
+                  <p class="two-column-product-brand">Brand name</p>
                   <h3><a href="#">Complete Strut Assembly by Bant Loaded</a></h3>
-                  <p class="product-description">Width: 145Profile: 80Rim Size: 13</p>
-                  <div class="product-price-box">
-                    <p class="product-price">$21.99</p>
-                    <p class="product-old-price">$15.99</p>
+                  <p class="two-column-product-description">Width: 145Profile: 80Rim Size: 13</p>
+
+                  <div class="two-column-product-price-box">
+                    <p class="two-column-product-price">$21.99</p>
+                    <p class="two-column-product-old-price">$15.99</p>
                   </div>
-                  <p class="product-vat">Incl. 20% VAT</p>
-                  <div class="product-stock">
+                  <p class="two-column-product-vat">Incl. 20% VAT</p>
+
+                  <div class="two-column-product-stock">
                     <p> <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M7.95071 16.5C7.27536 16.5 6.60768 16.3542 6.07814 16.0626L1.98 13.7833C0.867201 13.1694 0 11.6882 0 10.4142V6.07814C0 4.80418 0.867201 3.33072 1.98 2.70909L6.07814 0.437443C7.12954 -0.145814 8.77188 -0.145814 9.82327 0.437443L13.9214 2.71673C15.0342 3.33069 15.9014 4.81186 15.9014 6.08582V10.4219C15.9014 11.6959 15.0342 13.1693 13.9214 13.7909L9.82327 16.0626C9.29374 16.3542 8.62606 16.5 7.95071 16.5ZM7.95071 1.15116C7.46722 1.15116 6.99141 1.25093 6.63839 1.44279L5.46667 2.09447L11.8216 5.76417L14.1257 4.43113C13.9028 4.13094 13.638 3.87777 13.3612 3.72208L9.26303 1.44279C8.91001 1.25093 8.4342 1.15116 7.95071 1.15116ZM11.2134 7.45377V9.2016C11.2134 9.51625 11.4743 9.77718 11.789 9.77718C12.1036 9.77718 12.3646 9.51627 12.3646 9.21697V6.78695L14.6505 5.46284C14.7146 5.67666 14.7503 5.88838 14.7503 6.08582V10.4219C14.7503 11.2738 14.0979 12.3712 13.3612 12.7856L9.26303 15.0649C9.05505 15.1815 8.8001 15.2633 8.52617 15.3105V9.01034L11.2134 7.45377ZM10.6816 6.42375L7.94949 8.00448L1.77438 4.43095C1.99751 4.13089 2.26289 3.87809 2.54024 3.72208L4.3002 2.74323L10.6816 6.42375ZM7.375 9.00732L1.25004 5.46275C1.18651 5.67594 1.15117 5.88753 1.15117 6.08582V10.4219C1.15117 11.2661 1.80349 12.3712 2.54024 12.7856L6.63839 15.0649C6.84631 15.1815 7.10116 15.2633 7.375 15.3104V9.00732Z"
@@ -420,35 +505,39 @@
                       </svg>
                       In Stock</p>
                   </div>
-                  <div class="product-stock-progress-bar">
-                    <div class="progress-bar">
-                      <div class="incomplete" style="width: 30%;"></div>
+
+                  <div class="two-column-product-stock-progress-bar">
+                    <div class="two-column-progress-bar">
+                      <div class="two-column-incomplete" style="width: 30%;"></div>
                     </div>
-                    <div class="product-quantity">
+                    <div class="two-column-product-quantity">
                       <p>Available: <span>23</span></p>
                       <p>Sold: <span>77</span></p>
                     </div>
                   </div>
                 </div>
-                <div class="product-badge">
-                  <p class="product-off">15% OFF</p>
+                <div class="two-column-product-badge">
+                  <p class="two-column-product-off">15% OFF</p>
                 </div>
               </div>
 
-              <div class="product-item">
-                <div class="product-item-image">
+              <div class="two-column-product-item">
+                <div class="two-column-product-item-image">
                   <img src="./img/product/product-03.png" alt="">
                 </div>
-                <div class="product-item-content">
-                  <p class="product-brand">Brand name</p>
+
+                <div class="two-column-product-item-content">
+                  <p class="two-column-product-brand">Brand name</p>
                   <h3><a href="#">Complete Strut Assembly by Bant Loaded</a></h3>
-                  <p class="product-description">Width: 145Profile: 80Rim Size: 13</p>
-                  <div class="product-price-box">
-                    <p class="product-price">$21.99</p>
-                    <p class="product-old-price">$15.99</p>
+                  <p class="two-column-product-description">Width: 145Profile: 80Rim Size: 13</p>
+
+                  <div class="two-column-product-price-box">
+                    <p class="two-column-product-price">$21.99</p>
+                    <p class="two-column-product-old-price">$15.99</p>
                   </div>
-                  <p class="product-vat">Incl. 20% VAT</p>
-                  <div class="product-stock">
+                  <p class="two-column-product-vat">Incl. 20% VAT</p>
+
+                  <div class="two-column-product-stock">
                     <p> <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M7.95071 16.5C7.27536 16.5 6.60768 16.3542 6.07814 16.0626L1.98 13.7833C0.867201 13.1694 0 11.6882 0 10.4142V6.07814C0 4.80418 0.867201 3.33072 1.98 2.70909L6.07814 0.437443C7.12954 -0.145814 8.77188 -0.145814 9.82327 0.437443L13.9214 2.71673C15.0342 3.33069 15.9014 4.81186 15.9014 6.08582V10.4219C15.9014 11.6959 15.0342 13.1693 13.9214 13.7909L9.82327 16.0626C9.29374 16.3542 8.62606 16.5 7.95071 16.5ZM7.95071 1.15116C7.46722 1.15116 6.99141 1.25093 6.63839 1.44279L5.46667 2.09447L11.8216 5.76417L14.1257 4.43113C13.9028 4.13094 13.638 3.87777 13.3612 3.72208L9.26303 1.44279C8.91001 1.25093 8.4342 1.15116 7.95071 1.15116ZM11.2134 7.45377V9.2016C11.2134 9.51625 11.4743 9.77718 11.789 9.77718C12.1036 9.77718 12.3646 9.51627 12.3646 9.21697V6.78695L14.6505 5.46284C14.7146 5.67666 14.7503 5.88838 14.7503 6.08582V10.4219C14.7503 11.2738 14.0979 12.3712 13.3612 12.7856L9.26303 15.0649C9.05505 15.1815 8.8001 15.2633 8.52617 15.3105V9.01034L11.2134 7.45377ZM10.6816 6.42375L7.94949 8.00448L1.77438 4.43095C1.99751 4.13089 2.26289 3.87809 2.54024 3.72208L4.3002 2.74323L10.6816 6.42375ZM7.375 9.00732L1.25004 5.46275C1.18651 5.67594 1.15117 5.88753 1.15117 6.08582V10.4219C1.15117 11.2661 1.80349 12.3712 2.54024 12.7856L6.63839 15.0649C6.84631 15.1815 7.10116 15.2633 7.375 15.3104V9.00732Z"
@@ -456,35 +545,39 @@
                       </svg>
                       In Stock</p>
                   </div>
-                  <div class="product-stock-progress-bar">
-                    <div class="progress-bar">
-                      <div class="incomplete" style="width: 30%;"></div>
+
+                  <div class="two-column-product-stock-progress-bar">
+                    <div class="two-column-progress-bar">
+                      <div class="two-column-incomplete" style="width: 30%;"></div>
                     </div>
-                    <div class="product-quantity">
+                    <div class="two-column-product-quantity">
                       <p>Available: <span>23</span></p>
                       <p>Sold: <span>77</span></p>
                     </div>
                   </div>
                 </div>
-                <div class="product-badge">
-                  <p class="product-sold">2,360 sold</p>
+                <div class="two-column-product-badge">
+                  <p class="two-column-product-new">NEW</p>
                 </div>
               </div>
 
-              <div class="product-item">
-                <div class="product-item-image">
+              <div class="two-column-product-item">
+                <div class="two-column-product-item-image">
                   <img src="./img/product/product-04.png" alt="">
                 </div>
-                <div class="product-item-content">
-                  <p class="product-brand">Brand name</p>
+
+                <div class="two-column-product-item-content">
+                  <p class="two-column-product-brand">Brand name</p>
                   <h3><a href="#">Complete Strut Assembly by Bant Loaded</a></h3>
-                  <p class="product-description">Width: 145Profile: 80Rim Size: 13</p>
-                  <div class="product-price-box">
-                    <p class="product-price">$21.99</p>
-                    <p class="product-old-price">$15.99</p>
+                  <p class="two-column-product-description">Width: 145Profile: 80Rim Size: 13</p>
+
+                  <div class="two-column-product-price-box">
+                    <p class="two-column-product-price">$21.99</p>
+                    <p class="two-column-product-old-price">$15.99</p>
                   </div>
-                  <p class="product-vat">Incl. 20% VAT</p>
-                  <div class="product-stock">
+                  <p class="two-column-product-vat">Incl. 20% VAT</p>
+
+                  <div class="two-column-product-stock">
                     <p> <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M7.95071 16.5C7.27536 16.5 6.60768 16.3542 6.07814 16.0626L1.98 13.7833C0.867201 13.1694 0 11.6882 0 10.4142V6.07814C0 4.80418 0.867201 3.33072 1.98 2.70909L6.07814 0.437443C7.12954 -0.145814 8.77188 -0.145814 9.82327 0.437443L13.9214 2.71673C15.0342 3.33069 15.9014 4.81186 15.9014 6.08582V10.4219C15.9014 11.6959 15.0342 13.1693 13.9214 13.7909L9.82327 16.0626C9.29374 16.3542 8.62606 16.5 7.95071 16.5ZM7.95071 1.15116C7.46722 1.15116 6.99141 1.25093 6.63839 1.44279L5.46667 2.09447L11.8216 5.76417L14.1257 4.43113C13.9028 4.13094 13.638 3.87777 13.3612 3.72208L9.26303 1.44279C8.91001 1.25093 8.4342 1.15116 7.95071 1.15116ZM11.2134 7.45377V9.2016C11.2134 9.51625 11.4743 9.77718 11.789 9.77718C12.1036 9.77718 12.3646 9.51627 12.3646 9.21697V6.78695L14.6505 5.46284C14.7146 5.67666 14.7503 5.88838 14.7503 6.08582V10.4219C14.7503 11.2738 14.0979 12.3712 13.3612 12.7856L9.26303 15.0649C9.05505 15.1815 8.8001 15.2633 8.52617 15.3105V9.01034L11.2134 7.45377ZM10.6816 6.42375L7.94949 8.00448L1.77438 4.43095C1.99751 4.13089 2.26289 3.87809 2.54024 3.72208L4.3002 2.74323L10.6816 6.42375ZM7.375 9.00732L1.25004 5.46275C1.18651 5.67594 1.15117 5.88753 1.15117 6.08582V10.4219C1.15117 11.2661 1.80349 12.3712 2.54024 12.7856L6.63839 15.0649C6.84631 15.1815 7.10116 15.2633 7.375 15.3104V9.00732Z"
@@ -492,35 +585,39 @@
                       </svg>
                       In Stock</p>
                   </div>
-                  <div class="product-stock-progress-bar">
-                    <div class="progress-bar">
-                      <div class="incomplete" style="width: 30%;"></div>
+
+                  <div class="two-column-product-stock-progress-bar">
+                    <div class="two-column-progress-bar">
+                      <div class="two-column-incomplete" style="width: 30%;"></div>
                     </div>
-                    <div class="product-quantity">
+                    <div class="two-column-product-quantity">
                       <p>Available: <span>23</span></p>
                       <p>Sold: <span>77</span></p>
                     </div>
                   </div>
                 </div>
-                <div class="product-badge">
-                  <p class="product-Stock">Out of Stock</p>
+                <div class="two-column-product-badge">
+                  <p class="two-column-product-new">NEW</p>
                 </div>
               </div>
 
-              <div class="product-item">
-                <div class="product-item-image">
+              <div class="two-column-product-item">
+                <div class="two-column-product-item-image">
                   <img src="./img/product/product-05.png" alt="">
                 </div>
-                <div class="product-item-content">
-                  <p class="product-brand">Brand name</p>
+
+                <div class="two-column-product-item-content">
+                  <p class="two-column-product-brand">Brand name</p>
                   <h3><a href="#">Complete Strut Assembly by Bant Loaded</a></h3>
-                  <p class="product-description">Width: 145Profile: 80Rim Size: 13</p>
-                  <div class="product-price-box">
-                    <p class="product-price">$21.99</p>
-                    <p class="product-old-price">$15.99</p>
+                  <p class="two-column-product-description">Width: 145Profile: 80Rim Size: 13</p>
+
+                  <div class="two-column-product-price-box">
+                    <p class="two-column-product-price">$21.99</p>
+                    <p class="two-column-product-old-price">$15.99</p>
                   </div>
-                  <p class="product-vat">Incl. 20% VAT</p>
-                  <div class="product-stock">
+                  <p class="two-column-product-vat">Incl. 20% VAT</p>
+
+                  <div class="two-column-product-stock">
                     <p> <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M7.95071 16.5C7.27536 16.5 6.60768 16.3542 6.07814 16.0626L1.98 13.7833C0.867201 13.1694 0 11.6882 0 10.4142V6.07814C0 4.80418 0.867201 3.33072 1.98 2.70909L6.07814 0.437443C7.12954 -0.145814 8.77188 -0.145814 9.82327 0.437443L13.9214 2.71673C15.0342 3.33069 15.9014 4.81186 15.9014 6.08582V10.4219C15.9014 11.6959 15.0342 13.1693 13.9214 13.7909L9.82327 16.0626C9.29374 16.3542 8.62606 16.5 7.95071 16.5ZM7.95071 1.15116C7.46722 1.15116 6.99141 1.25093 6.63839 1.44279L5.46667 2.09447L11.8216 5.76417L14.1257 4.43113C13.9028 4.13094 13.638 3.87777 13.3612 3.72208L9.26303 1.44279C8.91001 1.25093 8.4342 1.15116 7.95071 1.15116ZM11.2134 7.45377V9.2016C11.2134 9.51625 11.4743 9.77718 11.789 9.77718C12.1036 9.77718 12.3646 9.51627 12.3646 9.21697V6.78695L14.6505 5.46284C14.7146 5.67666 14.7503 5.88838 14.7503 6.08582V10.4219C14.7503 11.2738 14.0979 12.3712 13.3612 12.7856L9.26303 15.0649C9.05505 15.1815 8.8001 15.2633 8.52617 15.3105V9.01034L11.2134 7.45377ZM10.6816 6.42375L7.94949 8.00448L1.77438 4.43095C1.99751 4.13089 2.26289 3.87809 2.54024 3.72208L4.3002 2.74323L10.6816 6.42375ZM7.375 9.00732L1.25004 5.46275C1.18651 5.67594 1.15117 5.88753 1.15117 6.08582V10.4219C1.15117 11.2661 1.80349 12.3712 2.54024 12.7856L6.63839 15.0649C6.84631 15.1815 7.10116 15.2633 7.375 15.3104V9.00732Z"
@@ -528,32 +625,39 @@
                       </svg>
                       In Stock</p>
                   </div>
-                  <div class="product-stock-progress-bar">
-                    <div class="progress-bar">
-                      <div class="incomplete" style="width: 30%;"></div>
+
+                  <div class="two-column-product-stock-progress-bar">
+                    <div class="two-column-progress-bar">
+                      <div class="two-column-incomplete" style="width: 30%;"></div>
                     </div>
-                    <div class="product-quantity">
+                    <div class="two-column-product-quantity">
                       <p>Available: <span>23</span></p>
                       <p>Sold: <span>77</span></p>
                     </div>
                   </div>
                 </div>
+                <div class="two-column-product-badge">
+                  <p class="two-column-product-new">NEW</p>
+                </div>
               </div>
 
-              <div class="product-item">
-                <div class="product-item-image">
+              <div class="two-column-product-item">
+                <div class="two-column-product-item-image">
                   <img src="./img/product/product-06.png" alt="">
                 </div>
-                <div class="product-item-content">
-                  <p class="product-brand">Brand name</p>
+
+                <div class="two-column-product-item-content">
+                  <p class="two-column-product-brand">Brand name</p>
                   <h3><a href="#">Complete Strut Assembly by Bant Loaded</a></h3>
-                  <p class="product-description">Width: 145Profile: 80Rim Size: 13</p>
-                  <div class="product-price-box">
-                    <p class="product-price">$21.99</p>
-                    <p class="product-old-price">$15.99</p>
+                  <p class="two-column-product-description">Width: 145Profile: 80Rim Size: 13</p>
+
+                  <div class="two-column-product-price-box">
+                    <p class="two-column-product-price">$21.99</p>
+                    <p class="two-column-product-old-price">$15.99</p>
                   </div>
-                  <p class="product-vat">Incl. 20% VAT</p>
-                  <div class="product-stock">
+                  <p class="two-column-product-vat">Incl. 20% VAT</p>
+
+                  <div class="two-column-product-stock">
                     <p> <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M7.95071 16.5C7.27536 16.5 6.60768 16.3542 6.07814 16.0626L1.98 13.7833C0.867201 13.1694 0 11.6882 0 10.4142V6.07814C0 4.80418 0.867201 3.33072 1.98 2.70909L6.07814 0.437443C7.12954 -0.145814 8.77188 -0.145814 9.82327 0.437443L13.9214 2.71673C15.0342 3.33069 15.9014 4.81186 15.9014 6.08582V10.4219C15.9014 11.6959 15.0342 13.1693 13.9214 13.7909L9.82327 16.0626C9.29374 16.3542 8.62606 16.5 7.95071 16.5ZM7.95071 1.15116C7.46722 1.15116 6.99141 1.25093 6.63839 1.44279L5.46667 2.09447L11.8216 5.76417L14.1257 4.43113C13.9028 4.13094 13.638 3.87777 13.3612 3.72208L9.26303 1.44279C8.91001 1.25093 8.4342 1.15116 7.95071 1.15116ZM11.2134 7.45377V9.2016C11.2134 9.51625 11.4743 9.77718 11.789 9.77718C12.1036 9.77718 12.3646 9.51627 12.3646 9.21697V6.78695L14.6505 5.46284C14.7146 5.67666 14.7503 5.88838 14.7503 6.08582V10.4219C14.7503 11.2738 14.0979 12.3712 13.3612 12.7856L9.26303 15.0649C9.05505 15.1815 8.8001 15.2633 8.52617 15.3105V9.01034L11.2134 7.45377ZM10.6816 6.42375L7.94949 8.00448L1.77438 4.43095C1.99751 4.13089 2.26289 3.87809 2.54024 3.72208L4.3002 2.74323L10.6816 6.42375ZM7.375 9.00732L1.25004 5.46275C1.18651 5.67594 1.15117 5.88753 1.15117 6.08582V10.4219C1.15117 11.2661 1.80349 12.3712 2.54024 12.7856L6.63839 15.0649C6.84631 15.1815 7.10116 15.2633 7.375 15.3104V9.00732Z"
@@ -561,116 +665,22 @@
                       </svg>
                       In Stock</p>
                   </div>
-                  <div class="product-stock-progress-bar">
-                    <div class="progress-bar">
-                      <div class="incomplete" style="width: 30%;"></div>
+
+                  <div class="two-column-product-stock-progress-bar">
+                    <div class="two-column-progress-bar">
+                      <div class="two-column-incomplete" style="width: 30%;"></div>
                     </div>
-                    <div class="product-quantity">
+                    <div class="two-column-product-quantity">
                       <p>Available: <span>23</span></p>
                       <p>Sold: <span>77</span></p>
                     </div>
                   </div>
+                </div>
+                <div class="two-column-product-badge">
+                  <p class="two-column-product-new">NEW</p>
                 </div>
               </div>
 
-              <div class="product-item">
-                <div class="product-item-image">
-                  <img src="./img/product/product-07.png" alt="">
-                </div>
-                <div class="product-item-content">
-                  <p class="product-brand">Brand name</p>
-                  <h3><a href="#">Complete Strut Assembly by Bant Loaded</a></h3>
-                  <p class="product-description">Width: 145Profile: 80Rim Size: 13</p>
-                  <div class="product-price-box">
-                    <p class="product-price">$21.99</p>
-                    <p class="product-old-price">$15.99</p>
-                  </div>
-                  <p class="product-vat">Incl. 20% VAT</p>
-                  <div class="product-stock">
-                    <p> <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M7.95071 16.5C7.27536 16.5 6.60768 16.3542 6.07814 16.0626L1.98 13.7833C0.867201 13.1694 0 11.6882 0 10.4142V6.07814C0 4.80418 0.867201 3.33072 1.98 2.70909L6.07814 0.437443C7.12954 -0.145814 8.77188 -0.145814 9.82327 0.437443L13.9214 2.71673C15.0342 3.33069 15.9014 4.81186 15.9014 6.08582V10.4219C15.9014 11.6959 15.0342 13.1693 13.9214 13.7909L9.82327 16.0626C9.29374 16.3542 8.62606 16.5 7.95071 16.5ZM7.95071 1.15116C7.46722 1.15116 6.99141 1.25093 6.63839 1.44279L5.46667 2.09447L11.8216 5.76417L14.1257 4.43113C13.9028 4.13094 13.638 3.87777 13.3612 3.72208L9.26303 1.44279C8.91001 1.25093 8.4342 1.15116 7.95071 1.15116ZM11.2134 7.45377V9.2016C11.2134 9.51625 11.4743 9.77718 11.789 9.77718C12.1036 9.77718 12.3646 9.51627 12.3646 9.21697V6.78695L14.6505 5.46284C14.7146 5.67666 14.7503 5.88838 14.7503 6.08582V10.4219C14.7503 11.2738 14.0979 12.3712 13.3612 12.7856L9.26303 15.0649C9.05505 15.1815 8.8001 15.2633 8.52617 15.3105V9.01034L11.2134 7.45377ZM10.6816 6.42375L7.94949 8.00448L1.77438 4.43095C1.99751 4.13089 2.26289 3.87809 2.54024 3.72208L4.3002 2.74323L10.6816 6.42375ZM7.375 9.00732L1.25004 5.46275C1.18651 5.67594 1.15117 5.88753 1.15117 6.08582V10.4219C1.15117 11.2661 1.80349 12.3712 2.54024 12.7856L6.63839 15.0649C6.84631 15.1815 7.10116 15.2633 7.375 15.3104V9.00732Z"
-                          fill="#099268" />
-                      </svg>
-                      In Stock</p>
-                  </div>
-                  <div class="product-stock-progress-bar">
-                    <div class="progress-bar">
-                      <div class="incomplete" style="width: 30%;"></div>
-                    </div>
-                    <div class="product-quantity">
-                      <p>Available: <span>23</span></p>
-                      <p>Sold: <span>77</span></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="product-item">
-                <div class="product-item-image">
-                  <img src="./img/product/product-08.png" alt="">
-                </div>
-                <div class="product-item-content">
-                  <p class="product-brand">Brand name</p>
-                  <h3><a href="#">Complete Strut Assembly by Bant Loaded</a></h3>
-                  <p class="product-description">Width: 145Profile: 80Rim Size: 13</p>
-                  <div class="product-price-box">
-                    <p class="product-price">$21.99</p>
-                    <p class="product-old-price">$15.99</p>
-                  </div>
-                  <p class="product-vat">Incl. 20% VAT</p>
-                  <div class="product-stock">
-                    <p> <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M7.95071 16.5C7.27536 16.5 6.60768 16.3542 6.07814 16.0626L1.98 13.7833C0.867201 13.1694 0 11.6882 0 10.4142V6.07814C0 4.80418 0.867201 3.33072 1.98 2.70909L6.07814 0.437443C7.12954 -0.145814 8.77188 -0.145814 9.82327 0.437443L13.9214 2.71673C15.0342 3.33069 15.9014 4.81186 15.9014 6.08582V10.4219C15.9014 11.6959 15.0342 13.1693 13.9214 13.7909L9.82327 16.0626C9.29374 16.3542 8.62606 16.5 7.95071 16.5ZM7.95071 1.15116C7.46722 1.15116 6.99141 1.25093 6.63839 1.44279L5.46667 2.09447L11.8216 5.76417L14.1257 4.43113C13.9028 4.13094 13.638 3.87777 13.3612 3.72208L9.26303 1.44279C8.91001 1.25093 8.4342 1.15116 7.95071 1.15116ZM11.2134 7.45377V9.2016C11.2134 9.51625 11.4743 9.77718 11.789 9.77718C12.1036 9.77718 12.3646 9.51627 12.3646 9.21697V6.78695L14.6505 5.46284C14.7146 5.67666 14.7503 5.88838 14.7503 6.08582V10.4219C14.7503 11.2738 14.0979 12.3712 13.3612 12.7856L9.26303 15.0649C9.05505 15.1815 8.8001 15.2633 8.52617 15.3105V9.01034L11.2134 7.45377ZM10.6816 6.42375L7.94949 8.00448L1.77438 4.43095C1.99751 4.13089 2.26289 3.87809 2.54024 3.72208L4.3002 2.74323L10.6816 6.42375ZM7.375 9.00732L1.25004 5.46275C1.18651 5.67594 1.15117 5.88753 1.15117 6.08582V10.4219C1.15117 11.2661 1.80349 12.3712 2.54024 12.7856L6.63839 15.0649C6.84631 15.1815 7.10116 15.2633 7.375 15.3104V9.00732Z"
-                          fill="#099268" />
-                      </svg>
-                      In Stock</p>
-                  </div>
-                  <div class="product-stock-progress-bar">
-                    <div class="progress-bar">
-                      <div class="incomplete" style="width: 30%;"></div>
-                    </div>
-                    <div class="product-quantity">
-                      <p>Available: <span>23</span></p>
-                      <p>Sold: <span>77</span></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="product-item">
-                <div class="product-item-image">
-                  <img src="./img/product/product-09.png" alt="">
-                </div>
-                <div class="product-item-content">
-                  <p class="product-brand">Brand name</p>
-                  <h3><a href="#">Complete Strut Assembly by Bant Loaded</a></h3>
-                  <p class="product-description">Width: 145Profile: 80Rim Size: 13</p>
-                  <div class="product-price-box">
-                    <p class="product-price">$21.99</p>
-                    <p class="product-old-price">$15.99</p>
-                  </div>
-                  <p class="product-vat">Incl. 20% VAT</p>
-                  <div class="product-stock">
-                    <p> <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                          d="M7.95071 16.5C7.27536 16.5 6.60768 16.3542 6.07814 16.0626L1.98 13.7833C0.867201 13.1694 0 11.6882 0 10.4142V6.07814C0 4.80418 0.867201 3.33072 1.98 2.70909L6.07814 0.437443C7.12954 -0.145814 8.77188 -0.145814 9.82327 0.437443L13.9214 2.71673C15.0342 3.33069 15.9014 4.81186 15.9014 6.08582V10.4219C15.9014 11.6959 15.0342 13.1693 13.9214 13.7909L9.82327 16.0626C9.29374 16.3542 8.62606 16.5 7.95071 16.5ZM7.95071 1.15116C7.46722 1.15116 6.99141 1.25093 6.63839 1.44279L5.46667 2.09447L11.8216 5.76417L14.1257 4.43113C13.9028 4.13094 13.638 3.87777 13.3612 3.72208L9.26303 1.44279C8.91001 1.25093 8.4342 1.15116 7.95071 1.15116ZM11.2134 7.45377V9.2016C11.2134 9.51625 11.4743 9.77718 11.789 9.77718C12.1036 9.77718 12.3646 9.51627 12.3646 9.21697V6.78695L14.6505 5.46284C14.7146 5.67666 14.7503 5.88838 14.7503 6.08582V10.4219C14.7503 11.2738 14.0979 12.3712 13.3612 12.7856L9.26303 15.0649C9.05505 15.1815 8.8001 15.2633 8.52617 15.3105V9.01034L11.2134 7.45377ZM10.6816 6.42375L7.94949 8.00448L1.77438 4.43095C1.99751 4.13089 2.26289 3.87809 2.54024 3.72208L4.3002 2.74323L10.6816 6.42375ZM7.375 9.00732L1.25004 5.46275C1.18651 5.67594 1.15117 5.88753 1.15117 6.08582V10.4219C1.15117 11.2661 1.80349 12.3712 2.54024 12.7856L6.63839 15.0649C6.84631 15.1815 7.10116 15.2633 7.375 15.3104V9.00732Z"
-                          fill="#099268" />
-                      </svg>
-                      In Stock</p>
-                  </div>
-                  <div class="product-stock-progress-bar">
-                    <div class="progress-bar">
-                      <div class="incomplete" style="width: 30%;"></div>
-                    </div>
-                    <div class="product-quantity">
-                      <p>Available: <span>23</span></p>
-                      <p>Sold: <span>77</span></p>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
 
