@@ -6108,3 +6108,96 @@ hr {
 }
 
 /* About Us Section CSS End */
+/* Leader Ship Section CSS Start */
+
+.leadership-section {
+  background-color: #191a1c;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.leadership-content {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.leadership-items {
+  display: flex;
+  gap: 20px;
+  text-align: center;
+}
+
+.leadership-item {
+  width: 25%;
+}
+
+.leadership-designation p {
+  font-size: 15px;
+  line-height: 25px;
+  font-weight: 400;
+  padding-top: 25px;
+  color: #8a8a8b;
+}
+
+.leadership-name h3 {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  padding-top: 5px;
+}
+
+.leadership-name h3 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.leadership-name h3 a:hover {
+  color: #f73312;
+  transition: all 0.5s ease;
+}
+
+.leadership-description p {
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 400;
+  padding-top: 25px;
+}
+
+.leadership-social ul {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  padding-top: 22px;
+}
+
+.leadership-social ul li {
+  list-style: none;
+}
+
+.leadership-social ul li svg {
+  width: 18px;
+  height: 18px;
+}
+
+.leadership-section-header {
+  text-align: center;
+}
+
+.leadership-section-header h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 55px;
+  padding-bottom: 20px;
+}
+
+.leadership-section-header p {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  padding-bottom: 50px;
+  color: #8a8a8b;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+/* Leader Ship Section CSS End */
