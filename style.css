@@ -6080,6 +6080,7 @@ hr {
   font-size: 50px;
   font-weight: 700;
   line-height: 55px;
+  position: relative;
 }
 
 .about-us-left-content-counter {
@@ -6088,6 +6089,80 @@ hr {
   justify-content: space-between;
   padding-top: 70px;
   gap: 30px;
+}
+
+.about-us-span-yellow {
+  background-color: #f5b466;
+  width: 42px;
+  height: 42px;
+  /* display: inline-flex; */
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  position: absolute;
+  top: 122px;
+  z-index: 5;
+}
+
+.about-us-span-violet {
+  background-color: #9d70ff;
+  width: 42px;
+  height: 42px;
+  /* display: inline-flex; */
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  position: absolute;
+  top: 122px;
+  left: 210px;
+  z-index: 4;
+}
+
+.about-us-span-blue {
+  background-color: #7098ff;
+  width: 42px;
+  height: 42px;
+  /* display: inline-flex; */
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  position: absolute;
+  top: 122px;
+  left: 217px;
+  z-index: 3;
+}
+
+.about-us-span-red {
+  background-color: #ff7070;
+  width: 42px;
+  height: 42px;
+  /* display: inline-flex; */
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  position: absolute;
+  top: 122px;
+  left: 223px;
+  z-index: 2;
+}
+
+.about-us-span-sky {
+  background-color: #70eeff;
+  width: 42px;
+  height: 42px;
+  /* display: inline-flex; */
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  position: absolute;
+  top: 122px;
+  left: 229px;
+  z-index: 1;
 }
 
 .counter-item {
@@ -6113,7 +6188,7 @@ hr {
 .leadership-section {
   background-color: #191a1c;
   color: #fff;
-  padding: 100px 0;
+  padding: 0 0 100px 0;
 }
 
 .leadership-content {
@@ -6201,3 +6276,218 @@ hr {
 }
 
 /* Leader Ship Section CSS End */
+
+/* Testimonial section CSS Start */
+
+.testimonial-section {
+  padding: 100px 0;
+  background-color: #191a1c;
+  position: relative;
+}
+
+.testimonial-row {
+  padding: 60px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.testimonial-row::before {
+  content: "";
+  width: 730px;
+  height: 100px;
+  position: absolute;
+  background-color: #fff;
+  top: 20px;
+  left: 67px;
+  border-radius: 20px 20px 0 0;
+}
+
+.testimonial-row::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: 780px;
+  width: 50px;
+  height: 100px;
+  background: #fff;
+  border-radius: 0 40px 0 0;
+  rotate: -20deg;
+}
+
+.testimonial-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-top: 100px;
+}
+
+.testimonial-head-content {
+  display: flex;
+  align-items: end;
+  margin-top: -100px;
+  position: relative;
+  z-index: 1;
+}
+
+.testimonial-heading h2 {
+  font-size: 80px;
+  line-height: 85px;
+  font-weight: 700;
+  max-width: 700px;
+}
+
+.testimonial-description {
+  padding-left: 110px;
+  max-width: 700px;
+}
+
+.testimonial-card-item {
+  width: calc(25% - 20px);
+  padding: 40px 85px 40px 40px;
+}
+
+.testimonial-card-item:hover {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  transition: all 0.5s ease;
+  border-radius: 10px;
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    100% calc(100% - 100px),
+    calc(100% - 100px) 100%,
+    0 100%
+  );
+}
+
+.testimonial-card-review ul {
+  display: flex;
+  list-style: none;
+  gap: 5px;
+}
+
+.testimonial-card-description {
+  padding-top: 40px;
+}
+
+.testimonial-card-description p {
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
+}
+
+.testimonial-card-author-details {
+  display: flex;
+  gap: 16px;
+  padding-top: 45px;
+}
+
+.testimonial-card-author-image img {
+  display: block;
+}
+
+.testimonial-card-author-name h4 {
+  padding-bottom: 5px;
+}
+
+.testimonial-card-author-name p {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #191a1ca3;
+}
+
+.testimonial-card-item:hover .testimonial-card-author-name p {
+  color: #fff;
+}
+
+/* Testimonial section CSS End */
+
+/* Business Partners section css start */
+
+.business-partners-section {
+  background-color: #191a1c;
+  color: #fff;
+  padding: 0 0 100px 0;
+}
+
+.business-partners-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: space-between;
+  padding-top: 60px;
+}
+
+.business-partners-heading h2 {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 700;
+  padding-bottom: 12px;
+  text-align: center;
+}
+
+.business-partners-description p {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  max-width: 620px;
+  margin: 0 auto;
+  color: #b3b4b6;
+  text-align: center;
+}
+
+/* Business Partners section css end */
+
+/* choose section css start */
+
+.choose-section {
+  padding: 0 0 100px 0;
+  background-color: #191a1c;
+  color: #fff;
+}
+
+.choose-header-content h2 {
+  font-size: 50px;
+  line-height: 55px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 25px;
+}
+
+.choose-header-content p {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.choose-items {
+  display: flex;
+  gap: 30px;
+  padding-top: 70px;
+}
+
+.choose-item {
+  width: 25%;
+}
+
+.choose-item-content h4 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  max-width: 240px;
+  padding-bottom: 13px;
+}
+
+.choose-item-content p {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  max-width: 300px;
+}
+
+/* choose section css end */
