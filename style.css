@@ -539,7 +539,7 @@ span.brator50 {
 /**************************** Header Top Media Query End ****************************/
 /**************************** Heder Top End              ****************************/
 
-/* header menu css start */
+/**************************** Header menu css start ****************************/
 
 .header-menu-container {
   position: relative;
@@ -615,6 +615,7 @@ span.brator50 {
 
 .menu-items ul li {
   list-style: none;
+  position: relative;
 }
 
 .menu-items ul li a {
@@ -624,11 +625,55 @@ span.brator50 {
   line-height: 18px;
   font-weight: 400;
   font-family: "Rubik";
+  padding: 10px 0;
 }
 
 .menu-items ul li a:hover {
   color: #f94040;
   transition: all 0.5s ease;
+}
+
+.menu-items ul li .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  z-index: 1000;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 270px;
+}
+
+.menu-items ul li .sub-menu li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-items ul li .sub-menu li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 8px 20px;
+  font-family: "Rubik";
+  font-weight: 400;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.menu-items ul li .sub-menu li a:hover {
+  color: #f94040;
+  background-color: #f9f9f9;
+  transition: cubic-bezier(0.6, 0.4, 0.25, 0.75), background-color 2s;
+}
+
+.menu-items ul li:hover > .sub-menu {
+  display: block;
 }
 
 .header-user-cart {
@@ -2569,7 +2614,6 @@ section.blog-section {
 
 .featured-makes-item-single {
   width: calc(25% - 23px);
-  padding: 24px 33px;
   border: 1px solid #d3d3d3;
   border-radius: 10px;
 }
@@ -2585,6 +2629,7 @@ section.blog-section {
   align-items: center;
   text-decoration: none;
   color: #000;
+  padding: 24px 33px;
 }
 
 /**************************** Featured Makes Section CSS End ****************************/
@@ -5954,7 +5999,7 @@ hr {
     flex-direction: column;
   }
 
-  .shop-page-list-filter-exhaust {
+  .shop-page-list-filter-navigation .shop-page-list-filter-exhaust {
     width: 43%;
   }
 
@@ -5986,6 +6031,14 @@ hr {
   .shop-page-list-product-item-price-box {
     border-left: unset;
     width: 100%;
+  }
+
+  .shop-page-list-product-item-image {
+    border-right: none;
+  }
+
+  .shop-page-list-filter-navigation .shop-page-list-filter-clear {
+    width: 13%;
   }
 }
 

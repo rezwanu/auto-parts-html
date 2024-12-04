@@ -69,7 +69,7 @@
       <div class="container">
         <div class="header-menu-container">
           <div class="header-logo">
-            <a href="#"><img src="./img/logo.png" alt=""></a>
+            <a href="./index.html"><img src="./img/logo.png" alt=""></a>
           </div>
           <div class="header-search-bar">
             <div class="search-bar">
@@ -101,13 +101,24 @@
           </div>
           <div class="menu-items">
             <ul>
-              <li class="hideOnMobile"><a href="#">Home</a></li>
+              <li class="hideOnMobile"><a href="./index.html">Home</a></li>
               <li class="hideOnMobile"><a href="#">Categories</a></li>
               <li class="hideOnMobile"><a href="#">Wheels & Tires</a></li>
-              <li class="hideOnMobile"><a href="#">Shop</a></li>
-              <li class="hideOnMobile"><a href="#">Pages</a></li>
-              <li class="hideOnMobile"><a href="#">Contact Us</a></li>
-              <li onclick="openSideMenu()">
+              <li class="hideOnMobile"><a href="./shop-page.html">Shop</a></li>
+              <li class="hideOnMobile"><a href="#">Pages</a>
+                <ul class="sub-menu">
+                  <li><a href="./blog-page.html">Blog Page</a></li>
+                  <li><a href="./blog-details-page.html">Blog Single</a></li>
+                  <li><a href="./shop-page.html">Product Page</a></li>
+                  <li><a href="./single-product-page.html">Product Single</a></li>
+                  <li><a href="./shop-page-list.html">Product List Page</a></li>
+                  <li><a href="./shop-page.html">Product Grid with Sidebar</a></li>
+                  <li><a href="./shop-page-two-column.html">Product Two Column with Sidebar</a></li>
+                  <li><a href="./checkout-page.html">Checkout Page</a></li>
+                </ul>
+              </li>
+              <li class="hideOnMobile"><a href="./contact-us.html">Contact Us</a></li>
+              <li class="hideOnDesktop" onclick="openSideMenu()">
                 <a href="#">
                   <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
                     fill="#5f6368">
@@ -143,10 +154,161 @@
               <a href="#"><img src="./img/icon/cart_icon.png" alt=""></a>
               <div class="cart-number">2</div>
             </div>
+
+            <div class="cart-pop-up">
+              <div class="cart-pop-up-container">
+                <div class="cart-pop-up-top">
+                  <div class="cart-pop-up-top-left">
+                    <div class="cart-pop-up-top-left-head">
+                      <h3>Your Cart</h3>
+                      <h3>(2 items)</h3>
+                    </div>
+                    <p>You are eligible for free shipping.</p>
+                  </div>
+                  <div class="cart-pop-up-top-right">
+                    <svg width="18" height="19" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M9.76183 9.42871L18 1.19054L17.2382 0.428711L9 8.66688L0.761828 0.428711L0 1.19054L8.23817 9.42871L0 17.6669L0.761827 18.4287L9 10.1905L17.2382 18.4287L18 17.6669L9.76183 9.42871Z"
+                        fill="black" />
+                    </svg>
+                  </div>
+                </div>
+                <div class="cart-pop-up-top-divider"></div>
+                <div class="cart-pop-up-bottom">
+                  <div class="cart-pop-up-bottom-products">
+                    <div class="cart-pop-up-bottom-single-product">
+                      <div class="cart-pop-up-bottom-product-left">
+                        <div class="cart-pop-up-bottom-prduct-left-img">
+                          <img src="./img/product/cart/cart-product-01.png" alt="">
+                        </div>
+                        <div class="cart-pop-up-bottom-title-quantity">
+                          <div class="cart-pop-up-bottom-prduct-left-content">
+                            <h4>M195 METHOS Black with Bronze Face</h4>
+                          </div>
+                          <div class="cart-pop-up-bottom-prduct-left-quantity">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-pop-up-bottom-product-right">
+                        <div class="product-price">
+                          <h4><span>1 x</span> $ 200</h4>
+                        </div>
+                        <div class="product-remove">
+                          <p>Remove</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-pop-up-bottom-single-product">
+                      <div class="cart-pop-up-bottom-product-left">
+                        <div class="cart-pop-up-bottom-prduct-left-img">
+                          <img src="./img/product/cart/cart-product-01.png" alt="">
+                        </div>
+                        <div class="cart-pop-up-bottom-title-quantity">
+                          <div class="cart-pop-up-bottom-prduct-left-content">
+                            <h4>M195 METHOS Black with Bronze Face</h4>
+                          </div>
+                          <div class="cart-pop-up-bottom-prduct-left-quantity">
+                            <button class="quantity-btn minus">-</button>
+                            <input type="number" value="1" min="1" class="quantity-input">
+                            <button class="quantity-btn plus">+</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="cart-pop-up-bottom-product-right">
+                        <div class="product-price">
+                          <h4><span>1 x</span> $ 200</h4>
+                        </div>
+                        <div class="product-remove">
+                          <p>Remove</p>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- <div class="cart-pop-up-bottom-product-divider"></div> -->
+                  </div>
+
+                  <div class="cart-pop-up-frequently-bought">
+
+                    <div class="frequently-bought-title">
+                      <h3>Frequently Bought Together</h3>
+                    </div>
+                    <div class="frequently-bought-products">
+                      <div class="frequently-bought-single-product">
+                        <div class="frequently-bought-product-left">
+                          <div class="frequently-bought-prduct-left-img">
+                            <img src="./img/product/cart/cart-product-01.png" alt="">
+                          </div>
+                          <div class="frequently-bought-product-right-content">
+                            <div class="frequently-bought-prduct-title">
+                              <h4>M195 METHOS Black with Bronze Face</h4>
+                            </div>
+                            <div class="frequently-bought-product-price">
+                              <h4>$ 200</h4>
+                            </div>
+                            <div class="frequently-bought-product-addToCart">
+                              <p>Add to Cart</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="frequently-bought-single-product">
+                        <div class="frequently-bought-product-left">
+                          <div class="frequently-bought-prduct-left-img">
+                            <img src="./img/product/cart/cart-product-01.png" alt="">
+                          </div>
+                          <div class="frequently-bought-product-right-content">
+                            <div class="frequently-bought-prduct-title">
+                              <h4>M195 METHOS Black with Bronze Face</h4>
+                            </div>
+                            <div class="frequently-bought-product-price">
+                              <h4>$ 200</h4>
+                            </div>
+                            <div class="frequently-bought-product-addToCart">
+                              <p>Add to Cart</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-pop-up-Continue-shopping">
+                      <p><a href="#">Continue Shopping</a></p>
+                    </div>
+                    <div class="cart-pop-up-top-divider"></div>
+                    <div class="cart-pop-up-subtotla">
+                      <div class="subtotal-left">
+                        <h3>Subtotal</h3>
+                        <p>Tax included and shipping calculated at checkout</p>
+                      </div>
+                      <div class="subtotal-right">
+                        <div class="subtotal-amount">
+                          <h3>$ 120.99</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-pop-up-add-order-note">
+                      <p><a href="#">Add order note +</a></p>
+                    </div>
+
+                    <div class="cart-pop-up-button-container">
+                      <button class="cart-pop-up-view-cart">View Cart</button>
+                      <button class="cart-pop-up-buy-now">Buy it Now</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
+
+    <div class="bg-banner">
+      <img src="./img/banner/top-right-bg.png" alt="">
+    </div>
+
   </section>
   <!-- header menu end -->
 
