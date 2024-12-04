@@ -857,6 +857,62 @@ span.brator50 {
   } */
 }
 
+/* Responsive CSS */
+@media (max-width: 768px) {
+  .menu-items {
+    display: none; /* Hide the menu by default on small screens */
+    flex-direction: column; /* Stack items vertically */
+    padding-left: 0;
+  }
+
+  .menu-items ul {
+    flex-direction: column; /* Stack list items vertically */
+    gap: 10px; /* Adjust spacing for smaller screens */
+  }
+
+  .menu-items ul li {
+    position: relative;
+  }
+
+  .menu-items ul li .sub-menu {
+    position: static; /* Remove absolute positioning */
+    box-shadow: none; /* Remove shadow */
+    border: none; /* Remove border */
+    background-color: transparent; /* Transparent background */
+  }
+
+  .menu-items ul li .sub-menu li a {
+    padding: 10px 15px; /* Adjust padding */
+    font-size: 16px; /* Increase font size for better readability */
+  }
+
+  .menu-items ul li .sub-menu li a:hover {
+    background-color: #eaeaea; /* Add hover background */
+  }
+
+  .hideOnMobile {
+    display: none; /* Hide items meant for desktop */
+  }
+
+  .hideOnDesktop {
+    display: block; /* Show items meant for mobile */
+  }
+
+  .menu-items.active {
+    display: flex; /* Show menu when active */
+  }
+}
+
+@media (min-width: 769px) {
+  .hideOnMobile {
+    display: block; /* Show items meant for desktop */
+  }
+
+  .hideOnDesktop {
+    display: none; /* Hide items meant for mobile */
+  }
+}
+
 /* header menu css end */
 
 /* hero section start */
@@ -1563,6 +1619,7 @@ span.brator50 {
   .best-title-section {
     gap: 20px;
     justify-content: space-between;
+    width: 100%;
   }
 
   .product-item {
@@ -3617,13 +3674,13 @@ section.blog-section {
   max-width: 420px;
 }
 
+/***************** Shop Page Breadcrumb CSS End *****************/
+/***************** Shop Page Sidebar CSS Start *****************/
+
 .shop-page-product-grid {
   display: flex;
   gap: 20px;
 }
-
-/***************** Shop Page Breadcrumb CSS End *****************/
-/***************** Shop Page Sidebar CSS Start *****************/
 
 .shop-page-product-grid-sidebar h4 {
   font-size: 24px;
@@ -4332,7 +4389,8 @@ section.blog-section {
     display: none;
   }
 
-  .controls {
+  .shop-page-product-grid {
+    flex-direction: column;
   }
 }
 
@@ -6323,9 +6381,7 @@ hr {
   }
 
   .two-column-shop-page-row {
-    display: flex;
     flex-direction: column;
-    gap: 20px;
   }
 
   .shop-page-product-grid-sidebar p,

@@ -83,7 +83,7 @@ const countdownInterval = setInterval(function () {
   }
 }, 1000);
 
-// FAQ Section
+// FAQ Section script start
 
 const items = document.querySelectorAll(".accordion button");
 
@@ -100,3 +100,15 @@ function toggleAccordion() {
 }
 
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
+
+// FAQ Section script end
+// Cart pop up script start
+
+const cartPopUp = document.querySelector(".cart-pop-up");
+const cartPopUpClose = document.querySelector(".cart-pop-up-close");
+
+cartPopUpClose.addEventListener("click", () => {
+  cartPopUp.style.display = "none";
+});
+
+// Cart pop up script end
