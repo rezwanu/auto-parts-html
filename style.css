@@ -1187,7 +1187,7 @@ span.brator50 {
 /* category section start */
 
 .Category-section {
-  padding: 110px 0;
+  padding: 100px 0;
   border-bottom: 1px solid #d7dadf;
 }
 
@@ -6987,3 +6987,112 @@ hr {
 }
 
 /* choose section css end */
+
+/* Search by Vehicle section css start */
+
+.search-by-vehicle-row {
+  background-color: #fff;
+  border-top: 2px solid #f73312;
+  border-radius: 8px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+}
+
+.search-by-vehicle-content h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.search-by-vehicle-content p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.search-by-vehicle-form .search-form {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.search-by-vehicle-form .search-form select {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #fff;
+  appearance: none;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23000000"><path d="M7 10l5 5 5-5z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+  background-size: 30px;
+}
+
+.search-form select:focus {
+  outline: none;
+  /* border-color: #e53935; */
+  background-color: #fff;
+  color: #000;
+}
+
+.search-by-vehicle-form .search-form button {
+  background-color: #f73312;
+  color: #fff;
+  border: 2px solid #f73312;
+  padding: 23px 80px;
+  font-size: 16px;
+  line-height: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 700;
+}
+
+.search-by-vehicle-form .search-form button:hover {
+  background-color: #fff;
+  color: #f73312;
+  transition: all 0.5s ease-in-out;
+  border: 2px solid #f73312;
+}
+
+.category-search {
+  padding-top: 70px;
+}
+
+@media (max-width: 900px) {
+  .search-by-vehicle-form .search-form {
+    flex-direction: column;
+  }
+
+  .search-by-vehicle-form .search-form select,
+  .search-by-vehicle-form .search-form button {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .search-by-vehicle-form .search-by-vehicle-content h3 {
+    font-size: 20px;
+  }
+
+  .search-by-vehicle-form .search-by-vehicle-content p {
+    font-size: 12px;
+  }
+}
+
+/* @media (max-width: 600px) {
+  .search-by-vehicle-form .search-form {
+    flex-direction: column;
+  }
+
+  .search-by-vehicle-form .search-form select,
+  .search-by-vehicle-form .search-form button {
+    width: 100%;
+  }
+} */
+
+/* Search by Vehicle section css end */
