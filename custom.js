@@ -102,13 +102,23 @@ function toggleAccordion() {
 items.forEach((item) => item.addEventListener("click", toggleAccordion));
 
 // FAQ Section script end
+
 // Cart pop up script start
 
 const cartPopUp = document.querySelector(".cart-pop-up");
 const cartPopUpClose = document.querySelector(".cart-pop-up-close");
 
-cartPopUpClose.addEventListener("click", () => {
-  cartPopUp.style.display = "none";
-});
+// cartPopUpClose.addEventListener("click", () => {
+//   cartPopUp.style.display = "none";
+// });
 
 // Cart pop up script end
+
+// hamburger menu start
+
+const hamburger = document.querySelector(".hamburger-menu");
+const menuList = document.querySelector(".menu-list");
+
+hamburger.addEventListener("click", () => {
+  menuList.classList.toggle("active");
+});

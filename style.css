@@ -604,14 +604,14 @@ span.brator50 {
 
 .menu-items {
   flex-grow: 1;
-  padding-left: 88px;
+  /* padding-left: 88px; */
 }
 
-.menu-items ul {
+/* .menu-items ul {
   display: flex;
   align-items: center;
   gap: 20px;
-}
+} */
 
 .menu-items ul li {
   list-style: none;
@@ -625,7 +625,7 @@ span.brator50 {
   line-height: 18px;
   font-weight: 400;
   font-family: "Rubik";
-  padding: 10px 0;
+  padding: 10px 20px;
 }
 
 .menu-items ul li a:hover {
@@ -756,6 +756,87 @@ span.brator50 {
   display: block;
 } */
 
+/* hamburger menu css start */
+
+.menu-items {
+  position: relative;
+}
+
+.hamburger-menu {
+  display: none;
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-list {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+
+.menu-list li {
+  position: relative;
+}
+
+.menu-list li .sub-menu {
+  display: none;
+}
+
+.menu-list li:hover > .sub-menu {
+  display: block;
+}
+
+@media (max-width: 1100px) {
+  .menu-items {
+    display: flex;
+    justify-content: end;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    justify-content: end;
+    padding-right: 30px;
+    margin-bottom: 5px;
+  }
+
+  .menu-list {
+    display: none;
+    flex-direction: column;
+    background: #fff;
+    position: absolute;
+    top: 100%;
+    right: 9%;
+    width: 200px;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-list.active {
+    display: block;
+  }
+
+  .menu-list.active .hideOnMobile {
+    display: block;
+  }
+
+  .menu-list li {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+  }
+
+  .menu-list li a {
+    padding: 10px 20px;
+    display: block;
+  }
+}
+
+/* hamburger menu css end */
+
 /* sidebar menu for mobile */
 
 .menu-items .side-menu {
@@ -804,9 +885,9 @@ span.brator50 {
     margin-left: 20px;
   }
 
-  .menu-items {
+  /* .menu-items {
     padding-left: 30px;
-  }
+  } */
 }
 
 @media (max-width: 1326px) {
@@ -826,23 +907,23 @@ span.brator50 {
 }
 
 @media (max-width: 1100px) {
-  .header-search-bar {
+  /* .header-search-bar {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 991px) {
-  .header-search-bar {
+  /* .header-search-bar {
     display: none;
   }
 
   .menu-items {
     padding-left: 20px;
-  }
+  } */
 }
 
 @media (max-width: 818px) {
-  .hideOnMobile {
+  /* .hideOnMobile {
     display: none;
   }
 
@@ -850,67 +931,11 @@ span.brator50 {
     padding-right: 40px;
     display: flex;
     justify-content: flex-end;
-  }
+  } */
 
   /* .menu-items {
     display: none;
   } */
-}
-
-/* Responsive CSS */
-@media (max-width: 768px) {
-  .menu-items {
-    display: none; /* Hide the menu by default on small screens */
-    flex-direction: column; /* Stack items vertically */
-    padding-left: 0;
-  }
-
-  .menu-items ul {
-    flex-direction: column; /* Stack list items vertically */
-    gap: 10px; /* Adjust spacing for smaller screens */
-  }
-
-  .menu-items ul li {
-    position: relative;
-  }
-
-  .menu-items ul li .sub-menu {
-    position: static; /* Remove absolute positioning */
-    box-shadow: none; /* Remove shadow */
-    border: none; /* Remove border */
-    background-color: transparent; /* Transparent background */
-  }
-
-  .menu-items ul li .sub-menu li a {
-    padding: 10px 15px; /* Adjust padding */
-    font-size: 16px; /* Increase font size for better readability */
-  }
-
-  .menu-items ul li .sub-menu li a:hover {
-    background-color: #eaeaea; /* Add hover background */
-  }
-
-  .hideOnMobile {
-    display: none; /* Hide items meant for desktop */
-  }
-
-  .hideOnDesktop {
-    display: block; /* Show items meant for mobile */
-  }
-
-  .menu-items.active {
-    display: flex; /* Show menu when active */
-  }
-}
-
-@media (min-width: 769px) {
-  .hideOnMobile {
-    display: block; /* Show items meant for desktop */
-  }
-
-  .hideOnDesktop {
-    display: none; /* Hide items meant for mobile */
-  }
 }
 
 /* header menu css end */
@@ -1378,6 +1403,12 @@ span.brator50 {
   margin-left: 10px;
 }
 
+.best-tab-section {
+  overflow-x: auto; /* Enables horizontal scrolling */
+  white-space: nowrap; /* Prevents line breaks */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling for mobile devices */
+}
+
 .best-tab-section ul {
   display: flex;
   gap: 30px;
@@ -1601,6 +1632,197 @@ span.brator50 {
   width: 25%;
   padding: 10px;
   margin: 10px;
+}
+
+.hotspots-banner-01,
+.hotspots-banner-02 {
+  position: relative;
+}
+
+.hotspots-banner-01-circle {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 52%;
+  left: 57%;
+  cursor: pointer;
+  animation: pulse 1s infinite;
+}
+
+.hotspots-banner-02-circle {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 42%;
+  left: 18%;
+  cursor: pointer;
+  animation: pulse 1s infinite;
+}
+
+.hotspots-banner-03-circle {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 59%;
+  left: 39%;
+  cursor: pointer;
+  animation: pulse 1s infinite;
+}
+
+.hotspots-banner-04-circle {
+  width: 28px;
+  height: 28px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 28%;
+  left: 61%;
+  cursor: pointer;
+  animation: pulse 1s infinite;
+}
+
+.hotspots-banner-01-dot {
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 red;
+  }
+  to {
+    box-shadow: 0 0 10px red;
+  }
+}
+
+.hotspots-banner-01 .hotspots-product {
+  width: 250px;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: -575%;
+  left: 125%;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.hotspots-banner-02 .hotspots-product {
+  width: 250px;
+  /* border: 1px solid red; */
+  position: absolute;
+  top: -575%;
+  left: 125%;
+  background: #fff;
+  border-radius: 10px;
+  z-index: 5;
+}
+
+.hotspots-banner-01 .hotspots-product-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.hotspots-banner-02 .hotspots-product-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+}
+
+.hotspots-product {
+  display: none;
+}
+
+.hotspots-banner-01-circle:hover .hotspots-product,
+.hotspots-banner-02-circle:hover .hotspots-product,
+.hotspots-banner-03-circle:hover .hotspots-product,
+.hotspots-banner-04-circle:hover .hotspots-product {
+  display: block;
+}
+
+.hotspots-banner-02-circle:hover .hotspots-product,
+.hotspots-banner-03-circle:hover .hotspots-product,
+.hotspots-banner-04-circle:hover .hotspots-product {
+  display: block;
+}
+
+.hotspots-product-brand {
+  color: #888;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.hotspots-product-name {
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  margin: 5px 0;
+  line-height: 22px;
+}
+
+.hotspots-product-name a {
+  text-decoration: none;
+  color: #000;
+}
+
+.hotspots-product-price {
+  font-size: 20px;
+  margin: 7px 0;
+  color: #f03e3e;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.hotspots-product-price .hotspots-old-price {
+  text-decoration: line-through;
+  color: #9ea4ab;
+  margin-left: 8px;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.hotspots-product-vat {
+  font-size: 14px;
+  line-height: 22px;
+  color: #000;
+  font-weight: 400;
+}
+
+.hotspot-divider {
+  border: none;
+  border-top: 1px dashed #ccc;
+  margin: 0;
+}
+
+.hotspots-product-content {
+  padding: 30px 0;
+  text-align: center;
+  /* display: none; */
 }
 
 @media (max-width: 1200px) {
