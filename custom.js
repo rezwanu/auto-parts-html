@@ -1,15 +1,15 @@
 // for mobile menubar
 // ========================== For Mobile Menubar ============================
 
-function openSideMenu() {
-  const sideMenu = document.querySelector(".side-menu");
-  sideMenu.style.display = "flex";
-}
+// function openSideMenu() {
+//   const sideMenu = document.querySelector(".side-menu");
+//   sideMenu.style.display = "flex";
+// }
 
-function closeSideMenu() {
-  const sideMenu = document.querySelector(".side-menu");
-  sideMenu.style.display = "none";
-}
+// function closeSideMenu() {
+//   const sideMenu = document.querySelector(".side-menu");
+//   sideMenu.style.display = "none";
+// }
 
 // ========================== For Hero Slider ============================
 
@@ -117,7 +117,7 @@ const cartPopUpClose = document.querySelector(".cart-pop-up-close");
 // hamburger menu start
 
 const hamburger = document.querySelector(".hamburger-menu");
-const menuList = document.querySelector(".menu-list");
+const menuList = document.querySelector(".mobile-menu-list");
 
 hamburger.addEventListener("click", () => {
   menuList.classList.toggle("active");
