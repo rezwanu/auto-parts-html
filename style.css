@@ -96,9 +96,6 @@ span.brator50 {
 }
 
 .header-top-right-language select {
-  /* display: flex;
-  align-items: center;
-  gap: 10px; */
   border: none;
   background: #000;
   color: #fff;
@@ -111,9 +108,6 @@ span.brator50 {
 }
 
 .header-top-right-currency select {
-  /* display: flex;
-  align-items: center;
-  gap: 10px; */
   border: none;
   background: #000;
   color: #fff;
@@ -170,8 +164,6 @@ span.brator50 {
   background-color: #fff;
   top: -9px;
   right: 30px;
-  /* border-top: black solid 2px; */
-  /* border-left: black solid 2px; */
   transform: rotate(45deg);
   border-radius: 4px 0 0 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -559,6 +551,10 @@ span.brator50 {
 .header-menu {
   padding: 20px 0;
   border-bottom: 1px solid #d7dadf;
+  position: sticky;
+  top: 0;
+  background: #fff;
+  z-index: 1;
 }
 
 .header-menu-container {
@@ -578,7 +574,6 @@ span.brator50 {
 }
 
 .header-search-input {
-  /* padding-right: 38px; */
   border-right: 1px solid #00000020;
   flex-grow: 1;
 }
@@ -604,14 +599,7 @@ span.brator50 {
 
 .menu-items {
   flex-grow: 1;
-  /* padding-left: 88px; */
 }
-
-/* .menu-items ul {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-} */
 
 .menu-items ul li {
   list-style: none;
@@ -851,10 +839,6 @@ li.hideOnMobile:not(:last-child) {
     display: block;
   }
 
-  /* .mobile-menu-list.active .hideOnMobile {
-    display: block;
-  } */
-
   .menu-list li {
     border-bottom: 1px solid #ddd;
     padding: 10px 0;
@@ -866,9 +850,8 @@ li.hideOnMobile:not(:last-child) {
   }
 }
 
-/* hamburger menu css end */
-
-/* sidebar menu for mobile */
+/**************************** Hamburger menu css end */
+/**************************** Sidebar menu for mobile */
 
 .menu-items .side-menu {
   display: fixed;
@@ -917,10 +900,6 @@ li.hideOnMobile:not(:last-child) {
     margin-left: 0px;
   }
 
-  /* .menu-items {
-    padding-left: 30px;
-  } */
-
   .menu-items ul li a {
     padding: 10px 10px;
   }
@@ -951,9 +930,8 @@ li.hideOnMobile:not(:last-child) {
 @media (max-width: 818px) {
 }
 
-/* header menu css end */
-
-/* hero section start */
+/**************************** Header menu css end */
+/**************************** Hero Section Start */
 
 .hero-section {
   padding-top: 60px;
@@ -962,7 +940,6 @@ li.hideOnMobile:not(:last-child) {
 
 .hero-section-container {
   position: relative;
-  /* z-index: 2; */
 }
 
 .hero-section-top-content {
@@ -1017,7 +994,6 @@ li.hideOnMobile:not(:last-child) {
 .hero-shop-now a:hover {
   background-color: #fff;
   color: #f73312;
-  /* border: 1px solid #f73312; */
   transition: all 0.5s ease-in-out;
 }
 
@@ -1220,9 +1196,9 @@ li.hideOnMobile:not(:last-child) {
   }
 }
 
-/* hero section end */
+/**************************** Hero Section End */
 
-/* category section start */
+/**************************** Category Section Start */
 
 .Category-section {
   padding: 100px 0;
@@ -1231,8 +1207,6 @@ li.hideOnMobile:not(:last-child) {
 
 .Category-section .section-title {
   display: flex;
-  /* justify-content: flex-start; */
-  /* align-items: center; */
   gap: 22px;
   margin-bottom: 30px;
 }
@@ -1298,7 +1272,6 @@ li.hideOnMobile:not(:last-child) {
 }
 
 .category-item-image {
-  /* padding-left: 140px; */
   padding-bottom: 55px;
   text-align: right;
 }
@@ -1380,9 +1353,9 @@ li.hideOnMobile:not(:last-child) {
   }
 }
 
-/* category section end */
+/**************************** Category Section End */
 
-/* best selling section css start */
+/**************************** Best Selling Section CSS Start */
 
 .best-selling-section {
   padding: 110px 0;
@@ -1415,12 +1388,6 @@ li.hideOnMobile:not(:last-child) {
 .best-title-section p a svg {
   margin-left: 10px;
 }
-
-/* .best-tab-section {
-  overflow-x: auto;
-  white-space: nowrap;
-  -webkit-overflow-scrolling: touch;
-} */
 
 .best-tab-section ul {
   display: flex;
@@ -1637,6 +1604,8 @@ li.hideOnMobile:not(:last-child) {
   font-size: 12px;
 }
 
+/**************************** Hotspot Section Start */
+
 .hotspots-section {
   display: flex;
 }
@@ -1745,7 +1714,6 @@ li.hideOnMobile:not(:last-child) {
 
 .hotspots-banner-02 .hotspots-product {
   width: 250px;
-  /* border: 1px solid red; */
   position: absolute;
   top: -575%;
   left: 125%;
@@ -1839,8 +1807,9 @@ li.hideOnMobile:not(:last-child) {
 .hotspots-product-content {
   padding: 30px 0;
   text-align: center;
-  /* display: none; */
 }
+
+/**************************** Hotspot Section End */
 
 @media (max-width: 1200px) {
   .product-item {
@@ -1932,11 +1901,9 @@ li.hideOnMobile:not(:last-child) {
   }
 }
 
-/* ********************************* */
+/**************************** best selling section css end */
 
-/* best selling section css end */
-
-/* best Deals section css start */
+/**************************** best Deals section css start */
 
 .best-deals-section {
   border-bottom: 1px solid #d7dadf;
@@ -1946,7 +1913,6 @@ li.hideOnMobile:not(:last-child) {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* align-items: space-between; */
 }
 
 .deals-title-section {
@@ -2304,28 +2270,6 @@ li.hideOnMobile:not(:last-child) {
   color: #fff;
 }
 
-/* .timer-item::after {
-  content: "";
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  background-color: #fff;
-  border-radius: 1px;
-  top: 20px;
-  right: -25px;
-}
-
-.timer-item::before {
-  content: "";
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  background-color: #fff;
-  border-radius: 1px;
-  top: 20px;
-  right: -25px;
-} */
-
 .timer-item-seperator {
   position: absolute;
   top: 12px;
@@ -2454,7 +2398,6 @@ li.hideOnMobile:not(:last-child) {
 
   .deals-product-quantity {
     justify-content: space-between;
-    /* gap: 5px; */
     flex-wrap: wrap;
   }
 }
@@ -2503,9 +2446,9 @@ li.hideOnMobile:not(:last-child) {
   }
 }
 
-/* best Deals section css end */
+/**************************** best Deals section css end */
 
-/* our brand section css start */
+/**************************** our brand section css start */
 
 .our-brand-section {
   padding: 100px 0;
@@ -2543,9 +2486,9 @@ li.hideOnMobile:not(:last-child) {
   }
 }
 
-/* our brand section css end */
+/**************************** Our brand section css end */
 
-/* our service section css start */
+/**************************** our service section css start */
 
 .our-service-section {
   background: #000;
@@ -2602,7 +2545,7 @@ li.hideOnMobile:not(:last-child) {
   }
 }
 
-/* our service section css end */
+/**************************** our service section css end */
 
 /**************************** Blog Section Start ****************************/
 /**************************** Blog Section CSS Start ****************************/
@@ -2641,16 +2584,6 @@ section.blog-section {
   display: flex;
   gap: 30px;
 }
-
-/* .blog-item.blog-left {
-  width: 70%;
-  height: auto;
-} */
-
-/* .blog-item.blog-right {
-  width: 30%;
-  height: auto;
-} */
 
 .blog-content-section {
   position: relative;
@@ -4494,8 +4427,8 @@ section.blog-section {
 }
 
 .controls select {
-  background-color: #ffffff;
-  border: none;
+  background: transparent;
+  border: 1px solid #000;
   border-radius: 4px;
   padding: 4px 8px;
   font-size: 14px;
@@ -4703,6 +4636,27 @@ section.blog-section {
 
   .shop-page-product-grid {
     flex-direction: column;
+  }
+
+  .controls {
+    gap: 10px;
+  }
+
+  .controls select {
+    width: 100%;
+  }
+
+  .controls .sort,
+  .controls .show {
+    font-size: 13px;
+  }
+
+  .controls select {
+    font-size: 12px;
+  }
+
+  .results-toolbar {
+    padding: 15px 15px;
   }
 }
 

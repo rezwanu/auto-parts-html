@@ -100,7 +100,30 @@
                   </div>
                </div>
                <div class="menu-items">
-                  <ul>
+                  <button class="hamburger-menu">☰</button>
+                  <ul class="menu-list">
+                     <li><a href="./index.html">Home</a></li>
+                     <li><a href="#">Categories</a></li>
+                     <li><a href="#">Wheels & Tires</a></li>
+                     <li><a href="./shop-page.html">Shop</a></li>
+                     <li><a href="#">Pages</a>
+                        <ul class="sub-menu">
+                           <li><a href="./blog-page.html">Blog Page</a></li>
+                           <li><a href="./blog-details-page.html">Blog Single</a></li>
+                           <li><a href="./shop-page.html">Product Page</a></li>
+                           <li><a href="./single-product-page.html">Product Single</a></li>
+                           <li><a href="./shop-page-list.html">Product List Page</a></li>
+                           <li><a href="./shop-page.html">Product Grid with Sidebar</a></li>
+                           <li><a href="./shop-page-two-column.html">Product Two Column with Sidebar</a></li>
+                           <li><a href="./checkout-page.html">Checkout Page</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="./contact-us.html">Contact Us</a></li>
+                  </ul>
+               </div>
+               <!-- for mobile -->
+               <div class="mobile-menu">
+                  <ul class="mobile-menu-list">
                      <li class="hideOnMobile"><a href="./index.html">Home</a></li>
                      <li class="hideOnMobile"><a href="#">Categories</a></li>
                      <li class="hideOnMobile"><a href="#">Wheels & Tires</a></li>
@@ -118,34 +141,9 @@
                         </ul>
                      </li>
                      <li class="hideOnMobile"><a href="./contact-us.html">Contact Us</a></li>
-                     <li class="hideOnDesktop" onclick="openSideMenu()">
-                        <a href="#">
-                           <svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px"
-                              fill="#5f6368">
-                              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
-                           </svg>
-                        </a>
-                     </li>
-                  </ul>
-
-                  <ul class="side-menu">
-                     <li onclick="closeSideMenu()">
-                        <a href="#">
-                           <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
-                              fill="#5f6368">
-                              <path
-                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
-                           </svg>
-                        </a>
-                     </li>
-                     <li><a href="#">Home</a></li>
-                     <li><a href="#">Categories</a></li>
-                     <li><a href="#">Wheels & Tires</a></li>
-                     <li><a href="#">Shop</a></li>
-                     <li><a href="#">Pages</a></li>
-                     <li><a href="#">Contact Us</a></li>
                   </ul>
                </div>
+
                <div class="header-user-cart">
                   <div class="user-icon">
                      <a href="#"><img src="./img/icon/user_icon.png" alt=""></a>
@@ -231,7 +229,6 @@
                            </div>
 
                            <div class="cart-pop-up-frequently-bought">
-
                               <div class="frequently-bought-title">
                                  <h3>Frequently Bought Together</h3>
                               </div>
@@ -291,12 +288,10 @@
                               <div class="cart-pop-up-add-order-note">
                                  <p><a href="#">Add order note +</a></p>
                               </div>
-
                               <div class="cart-pop-up-button-container">
                                  <button class="cart-pop-up-view-cart">View Cart</button>
                                  <button class="cart-pop-up-buy-now">Buy it Now</button>
                               </div>
-
                            </div>
                         </div>
                      </div>
